@@ -1,5 +1,6 @@
 section {
-  margin-bottom: 30px;
+  padding: 25px;
+  background-color: gainsboro;
 }
 
 .header_nav {
@@ -23,7 +24,7 @@ section {
 }
 
 .hero {
-  background-image: url("./hero.jpg");
+  background-image: url("./assets/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -69,6 +70,18 @@ section {
 
 .skills {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.skills_category {
+  width: 40%;
+  height: 500px;
+  background-color: wheat;
+  border-radius: 5px;
+}
+
+.skills_image {
+  height: 30px;
 }
 
 .projects_item {
