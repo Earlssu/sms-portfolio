@@ -1,6 +1,13 @@
+body {
+  background-color: gainsboro;
+}
+
+strong {
+  font-weight: bold;
+}
+
 section {
   padding: 25px;
-  background-color: gainsboro;
 }
 
 .header_nav {
@@ -69,27 +76,76 @@ section {
 }
 
 .skills {
+  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 25px 0 0 0;
 }
 
 .skills_category {
-  width: 40%;
-  height: 500px;
-  background-color: wheat;
-  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+
+.skills_category_title {
+  font-size: 18px;
+  color: steelblue;
+  padding: 10px;
 }
 
 .skills_image {
   height: 30px;
 }
 
+.projects_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .projects_item {
-  margin: 10px 0;
+  padding: 5px 0;
+  margin: 10px auto;
   text-align: center;
+  max-width: 700px;
 }
 
 .project_name {
-  font-size: 18px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
   color: sienna;
+}
+
+.project_date {
+  color: gray;
+}
+
+.project_desc {
+  font-size: 18px;
+  padding: 10px 50px;
+  line-height: 2;
+}
+
+.project_info {
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.project_info_category {
+  display: flex;
+  margin: 15px 0;
+}
+
+.project_info_title {
+  width: 25%;
+  text-align: left;
+  border-right: solid 1px gray;
+}
+
+.project_info_desc {
+  width: 75%;
+  padding-left: 10px;
+  text-align: left;
 }

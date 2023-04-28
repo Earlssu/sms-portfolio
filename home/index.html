@@ -24,7 +24,7 @@
         <p class="hero_intro">
           안녕하세요. <br />
           수상할 정도로 웹 개발에 진심인 개발자입니다. <br />
-          React와 JavaScript를 기반으로 한 프로젝트를 주로 다룹니다.
+          React와 JavaScript를 기반으로 한 프로젝트를 주로 만듭니다.
         </p>
       </div>
     </section>
@@ -50,8 +50,9 @@
     <section class="skills_container">
       <h2 class="section_heading">Stacks</h2>
       <ul class="skills">
-        <li class="skills_category">
-          <span> Frontend </span> <br />
+        <div class="skills_category">
+          <h4 class="skills_category_title">Frontend</h4>
+          <br />
           <img
             class="skills_image"
             src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
@@ -84,9 +85,10 @@
             class="skills_image"
             src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
           />
-        </li>
-        <li class="skills_category">
-          <span> Version Control </span> <br />
+        </div>
+        <div class="skills_category">
+          <h4 class="skills_category_title">Version Control</h4>
+          <br />
           <img
             class="skills_image"
             src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
@@ -103,7 +105,10 @@
             class="skills_image"
             src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"
           />
-          <span> Communication </span> <br />
+        </div>
+        <div class="skills_category">
+          <h4 class="skills_category_title">Communication</h4>
+          <br />
           <img
             class="skills_image"
             src="https://img.shields.io/badge/jirasoftware-0052CC?style=for-the-badge&logo=jirasoftware&logoColor=white"
@@ -116,7 +121,7 @@
             class="skills_image"
             src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"
           />
-        </li>
+        </div>
       </ul>
     </section>
 
@@ -125,17 +130,106 @@
       <ul class="projects">
         <li class="projects_item">
           <h3 class="project_name">L'acier 남성 전용 화장품 쇼핑몰</h3>
+          <span class="project_date">2023.02</span>
           <p class="project_desc">
-            <span>프로젝트 기간</span>
-            <span></span>
-            <span>프로젝트 기간</span>
+            React, Typescript를 활용해 개발한
+            <strong> 남성 전용 화장품 쇼핑몰 </strong>입니다. <br />
+            화장품을 주력으로 판매하는 웹 사이트의 경우 대부분 여성용 화장품을
+            함께 판매하고 있어 화장품 선택의 폭이 넓고 다양합니다. 하지만 남성
+            고객들의 경우 이러한 장점은 복잡함이라는 단점으로 작용해 오히려 제품
+            선택에 어려움을 겪고 있습니다. 위와 같은 애로 사항을 애결하기 위해
+            남성 고객들을 위해 남성용 화장품으로만 구성된 간소화된 선택지와 제품
+            추천 기능을 포함한 웹 쇼핑몰을 만들었습니다.
           </p>
+          <div class="project_info">
+            <div class="project_info_category">
+              <span class="project_info_title">주요 기능</span>
+              <span class="project_info_desc">로그인, 장바구니 추가, 결제</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">프로젝트 규모</span
+              ><span class="project_info_desc">6인 프로젝트 (FE 3 / BE 3)</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">GitHub</span>
+              <span class="project_info_desc"
+                ><a href="https://github.com/codestates-seb/seb41_main_002"
+                  >📖</a
+                ></span
+              >
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">URL</span>
+              <span class="project_info_desc"
+                ><a
+                  href="http://seb41team02.s3-website.ap-northeast-2.amazonaws.com/"
+                  >🖥️</a
+                ></span
+              >
+            </div>
+          </div>
         </li>
         <li class="projects_item">
           <h3 class="project_name">Dodge.gg 전적 검색 사이트</h3>
+          <span class="project_date">2022.12</span>
+          <p class="project_desc">
+            React와 Riot Games의 공식 API를 활용해 개발한
+            <strong> 게임 전적 검색 사이트 </strong>입니다. <br />
+            기존에 존재하던 다양한 전적 검색 사이트에서 저와 팀원들이 느꼈던
+            불편사항들을 개선한 웹 페이지를 만들면 좋겠다는 생각으로
+            시작하였습니다. mobile first 시각을 갖고 사용자의 접근성을 높일 수
+            있도록 개발했습니다. 또한, 현업 디자이너 분에게서 디자인을 받아와
+            실무에서 따르는 디자인 방식을 익힐 수 있는 기회였습니다.
+          </p>
+          <div class="project_info">
+            <div class="project_info_category">
+              <span class="project_info_title">주요 기능</span>
+              <span class="project_info_desc">전적 검색, 캐릭터 별 추천</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">프로젝트 규모</span
+              ><span class="project_info_desc">3인 프로젝트 (FE 3)</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">GitHub</span>
+              <span class="project_info_desc"
+                ><a href="https://github.com/limdumb/DodGe.gg">📖</a></span
+              >
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">URL</span>
+              <!-- TODO: 배포 후 배포 링크 추가 -->
+              <span class="project_info_desc"><a href="">🖥️</a></span>
+            </div>
+          </div>
         </li>
         <li class="projects_item">
           <h3 class="project_name">Service Station Web Page</h3>
+          <span class="project_date">2022.12</span>
+          <p class="project_desc">
+            대학교 재학 중 개발한
+            <strong> Service Station 웹 사이트</strong>입니다. <br />
+            Service Station은 재학생들의 봉사 시간을 기록 및 관리하는 Austin
+            College의 실제 부서입니다. Michael Higgs 교수님이 시니어 개발자
+            역할을 맡으시고, 팀의 전반적인 관리와 회의를 주도하셨습니다. 웹
+            페이지는 Java Spring을 활용해 BE와 FE를 함께 개발했습니다.
+          </p>
+          <div class="project_info">
+            <div class="project_info_category">
+              <span class="project_info_title">주요 기능</span>
+              <span class="project_info_desc">전적 검색, 캐릭터 별 추천</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">프로젝트 규모</span
+              ><span class="project_info_desc">14인 프로젝트</span>
+            </div>
+            <div class="project_info_category">
+              <span class="project_info_title">GitHub</span>
+              <span class="project_info_desc"
+                ><a href="https://github.com/austin-college/srv">📖</a></span
+              >
+            </div>
+          </div>
         </li>
       </ul>
     </section>
