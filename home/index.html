@@ -240,19 +240,40 @@
       <form class="contact_form" action="">
         <div class="form_category">
           <label class="form_category_label" for="">보내시는 분</label>
-          <input type="text" />
+          <input
+            type="text"
+            class="form_category_input"
+            placeholder="보내시는 분의 성함"
+            name="email"
+          />
         </div>
         <div class="form_category">
-          <label class="form_category_label" for="">연락처</label>
-          <input type="text" />
+          <label class="form_category_label" for="phone">연락처</label>
+          <input
+            type="text"
+            class="form_category_input"
+            placeholder="010-1234-5678"
+            name="phone"
+          />
         </div>
         <div class="form_category">
-          <label class="form_category_label" for="">Email</label>
-          <input type="text" />
+          <label class="form_category_label" for="email">Email</label>
+          <input
+            type="text"
+            class="form_category_input"
+            placeholder="you@company.com"
+            name="email"
+          />
         </div>
         <div class="form_category">
-          <label class="form_category_label" for="">내용</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <label class="form_category_label" for="message">내용</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="연락주시는 내용을 입력해주세요"
+          ></textarea>
         </div>
         <button class="form_button_submit" type="submit">이메일 보내기</button>
       </form>

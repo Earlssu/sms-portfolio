@@ -175,11 +175,15 @@ section {
 .form_category_label {
   text-align: left;
   font-size: 18px;
-  margin: 10px 0;
+  padding: 15px 0 5px 0;
 }
 
-.contact_form input[type="text"] {
+.form_category_input {
   height: 30px;
+}
+
+.form_category_input,
+textarea {
   font-size: 18px;
   padding-left: 5px;
 }
