@@ -136,6 +136,55 @@ header {
   line-height: 2;
 }
 
+.project_slider {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project_slide {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.project_slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider_button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  z-index: 100;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 26px;
+}
+
+.slider_button:active {
+  color: white;
+}
+
+.btn_prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn_next {
+  top: 45%;
+  right: 2%;
+}
+
 .project_info {
   border-top: solid 1px rgba(0, 0, 0, 0.15);
   width: 70%;
