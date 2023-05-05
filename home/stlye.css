@@ -40,6 +40,7 @@ header {
 
 .header_nav_link {
   text-decoration: none;
+  padding: 10px;
 }
 
 .header_nav_link:visited {
@@ -47,7 +48,8 @@ header {
 }
 
 .header_nav_link:hover {
-  color: skyblue;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 1s;
 }
 
 .hero {
@@ -105,27 +107,44 @@ header {
 .section_heading {
   width: 200px;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin: 0 auto 20px auto;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.info_row {
-  margin: 20px 0;
-  display: flex;
+.about_side_content {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  line-height: 1.5;
 }
 
-.info_category,
-.skills_category {
-  width: 33%;
-  text-align: center;
+.side_content_header {
+  font-size: 18px;
+  color: sienna;
+}
+
+.about_main_content {
+  line-height: 2;
+}
+
+.about_main_content h3 {
+  font-size: 20px;
+  color: sienna;
+  margin-bottom: 10px;
 }
 
 .skills {
   display: flex;
   margin: 0 auto;
   padding: 25px 0 0 0;
+}
+
+.skills_category {
+  width: 33%;
+  text-align: center;
 }
 
 .skills_category_title {
