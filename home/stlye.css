@@ -1,3 +1,8 @@
+body,
+header {
+  font-family: "MaruBuriSemiBold";
+}
+
 body {
   padding-top: 50px;
   background: rgb(219, 219, 219);
