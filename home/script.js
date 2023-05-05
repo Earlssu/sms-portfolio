@@ -20,39 +20,77 @@ document
     }
   });
 
-const slides = document.querySelectorAll(".project_slide");
-const nextBtn = document.querySelector(".btn_next");
-const prevBtn = document.querySelector(".btn_prev");
-const sliderPageNum = document.querySelector(".slider_page_number");
-let currentIdx = 0;
-const maxIdx = slides.length - 1;
+const p1Slides = document.querySelectorAll(".project_01_slide");
+const p1NextBtn = document.querySelector(".btn_01_next");
+const p1PrevBtn = document.querySelector(".btn_01_prev");
+const p1SliderPageNum = document.querySelector(".page_number_01");
+let p1currentIdx = 0;
+const p1MaxIdx = p1Slides.length - 1;
 
-slides.forEach((slide, idx) => {
+p1Slides.forEach((slide, idx) => {
   slide.style.transform = `translateX(${idx * 100}%)`;
-  sliderPageNum.textContent = `${currentIdx + 1} / ${maxIdx + 1}`;
+  p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
 });
 
-nextBtn.addEventListener("click", function () {
-  if (currentIdx === maxIdx) {
-    currentIdx = 0;
+p1NextBtn.addEventListener("click", function () {
+  if (p1currentIdx === p1MaxIdx) {
+    p1currentIdx = 0;
   } else {
-    currentIdx++;
+    p1currentIdx++;
   }
 
-  slides.forEach((slide, idx) => {
-    slide.style.transform = `translateX(${100 * (idx - currentIdx)}%)`;
-    sliderPageNum.textContent = `${currentIdx + 1} / ${maxIdx + 1}`;
+  p1Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
+    p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
   });
 });
 
-prevBtn.addEventListener("click", function () {
-  if (currentIdx === 0) {
-    currentIdx = maxIdx;
+p1PrevBtn.addEventListener("click", function () {
+  if (p1currentIdx === 0) {
+    p1currentIdx = p1MaxIdx;
   } else {
-    currentIdx--;
+    p1currentIdx--;
   }
 
-  slides.forEach((slide, idx) => {
-    slide.style.transform = `translateX(${100 * (idx - currentIdx)}%)`;
+  p1Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
+  });
+});
+
+//
+const p2Slides = document.querySelectorAll(".project_02_slide");
+const p2NextBtn = document.querySelector(".btn_02_next");
+const p2PrevBtn = document.querySelector(".btn_02_prev");
+const p2SliderPageNum = document.querySelector(".page_number_02");
+let p2currentIdx = 0;
+const p2MaxIdx = p2Slides.length - 1;
+
+p2Slides.forEach((slide, idx) => {
+  slide.style.transform = `translateX(${idx * 100}%)`;
+  p2SliderPageNum.textContent = `${p2currentIdx + 1} / ${p2MaxIdx + 1}`;
+});
+
+p2NextBtn.addEventListener("click", function () {
+  if (p2currentIdx === p2MaxIdx) {
+    p2currentIdx = 0;
+  } else {
+    p2currentIdx++;
+  }
+
+  p2Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p2currentIdx)}%)`;
+    p2SliderPageNum.textContent = `${p2currentIdx + 1} / ${p2MaxIdx + 1}`;
+  });
+});
+
+p2PrevBtn.addEventListener("click", function () {
+  if (p2currentIdx === 0) {
+    p2currentIdx = p2MaxIdx;
+  } else {
+    p2currentIdx--;
+  }
+
+  p2Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p2currentIdx)}%)`;
   });
 });
