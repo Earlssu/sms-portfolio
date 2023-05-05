@@ -23,11 +23,13 @@ document
 const slides = document.querySelectorAll(".project_slide");
 const nextBtn = document.querySelector(".btn_next");
 const prevBtn = document.querySelector(".btn_prev");
+const sliderPageNum = document.querySelector(".slider_page_number");
 let currentIdx = 0;
 const maxIdx = slides.length - 1;
 
 slides.forEach((slide, idx) => {
   slide.style.transform = `translateX(${idx * 100}%)`;
+  sliderPageNum.textContent = `${currentIdx + 1} / ${maxIdx + 1}`;
 });
 
 nextBtn.addEventListener("click", function () {
@@ -39,6 +41,7 @@ nextBtn.addEventListener("click", function () {
 
   slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - currentIdx)}%)`;
+    sliderPageNum.textContent = `${currentIdx + 1} / ${maxIdx + 1}`;
   });
 });
 
