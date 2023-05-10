@@ -113,20 +113,12 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.about_side_content {
-  width: 200px;
-  padding: 10px;
-  margin: 10px;
-  float: right;
-  line-height: 1.5;
-}
-
-.side_content_header {
-  font-size: 18px;
-  color: sienna;
+.content_container {
+  display: flex;
 }
 
 .about_main_content {
+  width: 80%;
   line-height: 2;
 }
 
@@ -134,6 +126,29 @@ header {
   font-size: 20px;
   color: sienna;
   margin-bottom: 10px;
+}
+
+.about_main_content p {
+  margin-bottom: 20px;
+}
+
+.about_side_content {
+  padding: 20px 0 0 15px;
+  line-height: 1.5;
+}
+
+.side_content_list {
+  margin-bottom: 20px;
+}
+
+.side_content_list li {
+  padding: 5px 0 0 5px;
+}
+
+.side_content_header {
+  color: darkorange;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .skills {
@@ -222,8 +237,8 @@ header {
   color: white;
 }
 
-.slider_button:active {
-  color: white;
+.slider_button:hover {
+  color: orange;
 }
 
 .btn_prev {
@@ -257,6 +272,18 @@ header {
   width: 75%;
   padding-left: 10px;
   text-align: left;
+}
+
+.project_info_desc a {
+  text-decoration: none;
+}
+
+.project_info_desc a:visited {
+  color: black;
+}
+
+.project_info_desc a:hover {
+  color: sienna;
 }
 
 .contact_form {
