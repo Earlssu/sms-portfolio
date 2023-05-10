@@ -39,17 +39,34 @@ header {
 }
 
 .header_nav_link {
+  color: rgba(0, 0, 0, 0.55);
   text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
   padding: 10px;
+  position: relative;
 }
 
-.header_nav_link:visited {
-  color: black;
+.header_nav_link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: peru;
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
 .header_nav_link:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: all 1s;
+  color: black;
+}
+
+.header_nav_link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .hero {
@@ -124,7 +141,7 @@ header {
 
 .about_main_content h3 {
   font-size: 20px;
-  color: sienna;
+  color: darkslateblue;
   margin-bottom: 10px;
 }
 
@@ -146,7 +163,7 @@ header {
 }
 
 .side_content_header {
-  color: darkorange;
+  color: sienna;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -166,7 +183,7 @@ header {
   font-size: 18px;
   color: sienna;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 15px;
 }
 
 .skills_image {
