@@ -143,7 +143,7 @@ header {
 }
 
 .skills_category {
-  width: 33%;
+  width: 50%;
   text-align: center;
 }
 
@@ -259,14 +259,16 @@ header {
   text-align: left;
 }
 
-.contact_desc {
-  text-align: center;
-  color: gray;
-}
-
 .contact_form {
-  margin-top: 10px;
+  padding: 35px 0;
+  border-radius: 5px;
   text-align: center;
+  width: 100%;
+  background-image: url("assets/contact.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .form_category {
@@ -280,6 +282,7 @@ header {
   text-align: left;
   font-size: 18px;
   padding: 15px 0 10px 0;
+  color: rgba(151, 50, 50, 0.85);
 }
 
 .form_category_input {
@@ -294,18 +297,18 @@ header {
 }
 
 .form_button_submit {
+  font-size: 16px;
   margin-top: 20px;
-  border: none;
-  border-radius: 2px;
+  border-radius: 2.5px;
   padding: 15px;
   width: 200px;
-  border: solid 1px rgba(0, 0, 0, 0.15);
-  background-color: gainsboro;
+  border: solid 1px rgb(240, 239, 239);
+  background-color: rgb(255, 245, 183);
 }
 
 .form_button_submit:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(253, 155, 155);
 }
 
 footer {
