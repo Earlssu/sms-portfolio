@@ -181,7 +181,7 @@
       <ul class="projects">
         <li class="projects_item">
           <h3 class="project_name">L'acier 남성 전용 화장품 쇼핑몰</h3>
-          <span class="project_date">2023.02</span>
+          <span class="project_date">2023.01 - 2023.02 (4주)</span>
           <div class="project_slider">
             <div class="project_slide project_01_slide">
               <img src="assets/project_01_00.png" alt="" />
@@ -203,7 +203,7 @@
           <div class="project_desc">
             <p>
               React, Typescript를 활용해 개발한
-              <strong> 남성 전용 화장품 쇼핑몰 </strong>입니다.
+              <strong> 남성 전용 화장품 쇼핑몰</strong>입니다.
             </p>
             <p>
               화장품을 주력으로 판매하는 대부분의 웹 사이트의 경우 여성용
@@ -276,7 +276,7 @@
         </li>
         <li class="projects_item">
           <h3 class="project_name">Dodge.gg 전적 검색 사이트</h3>
-          <span class="project_date">2022.12</span>
+          <span class="project_date">2022.12 (3주) </span>
           <div class="project_slider">
             <div class="project_slide project_02_slide">
               <img src="assets/project_02_00.jpg" alt="" />
@@ -295,7 +295,7 @@
           <div class="project_desc">
             <p>
               React와 Riot Games의 공식 API를 활용해 개발한
-              <strong> 게임 '리그오브레전드'의 전적 검색 사이트 </strong>입니다.
+              <strong> 게임 '리그오브레전드'의 전적 검색 사이트</strong>입니다.
             </p>
             <p>
               기존에 존재하던 다양한 전적 검색 사이트에서 저와 팀원들이 느꼈던
@@ -342,7 +342,7 @@
         </li>
         <li class="projects_item">
           <h3 class="project_name">Service Station Web Page</h3>
-          <span class="project_date">2022.12</span>
+          <span class="project_date">2020.03 - 2020.05 (10주)</span>
           <div class="project_desc">
             대학교 재학 중 개발한
             <strong> Service Station 웹 사이트</strong>입니다. <br />
@@ -407,26 +407,36 @@
             placeholder="보내시는 분의 성함"
             name="from_name"
             id="from_name"
+            required
           />
         </div>
         <div class="form_category">
-          <label class="form_category_label" for="from_phone">연락처</label>
+          <label class="form_category_label" for="from_phone">
+            연락처
+            <span id="phone_validation_message"></span>
+          </label>
           <input
             type="text"
             class="form_category_input"
             placeholder="010-1234-5678"
             name="from_phone"
             id="from_phone"
+            maxlength="13"
+            required
           />
         </div>
         <div class="form_category">
-          <label class="form_category_label" for="from_email">Email</label>
+          <label class="form_category_label" for="from_email">
+            Email
+            <span id="email_validation_message"></span>
+          </label>
           <input
             type="email"
             class="form_category_input"
             placeholder="you@company.com"
             name="from_email"
             id="from_email"
+            required
           />
         </div>
         <div class="form_category">
@@ -437,6 +447,7 @@
             placeholder="연락주시는 내용을 입력해주세요"
             name="message"
             id="from_message"
+            required
           ></textarea>
         </div>
         <button class="form_button_submit" type="submit" value="Send">
