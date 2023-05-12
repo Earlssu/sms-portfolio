@@ -341,6 +341,11 @@ header {
   padding-left: 5px;
 }
 
+.validation_message {
+  font-size: 14px;
+  color: rgba(47, 79, 79, 0.8);
+}
+
 .form_button_submit {
   font-size: 16px;
   margin-top: 20px;

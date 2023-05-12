@@ -11,8 +11,7 @@ phoneNumber.addEventListener("keyup", () => {
 });
 
 phoneNumber.addEventListener("change", () => {
-  console.log(phoneNumber.value.length);
-  if (phoneNumber.value.length < 13) {
+  if (phoneNumber.value.length !== 13) {
     phoneValidationMessage.textContent =
       "휴대폰 번호를 모두 입력하지 않았습니다.";
   }
@@ -26,7 +25,6 @@ const emailValidation =
   /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
 emailInput.addEventListener("change", () => {
-  console.log(emailInput.value.match(emailValidation));
   if (emailInput.value.match(emailValidation) === null) {
     emailValidationMessage.textContent =
       "이메일을 맞게 입력했는지 확인해주세요.";
