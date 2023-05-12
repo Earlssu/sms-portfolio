@@ -41,10 +41,10 @@ a:visited {
 .to_top_button {
   position: fixed;
   font-size: 30px;
-  padding: 10px 12.5px;
+  padding: 10px 13px;
   bottom: 15px;
   right: 15px;
-  border: none;
+  border: solid 1px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   border-radius: 50%;
   z-index: 999;
@@ -64,7 +64,6 @@ a:visited {
 
 .header_nav_link {
   color: rgba(0, 0, 0, 0.55);
-
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px;
