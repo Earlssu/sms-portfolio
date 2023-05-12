@@ -30,6 +30,30 @@ header {
   z-index: 100;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.to_top_button {
+  position: fixed;
+  font-size: 30px;
+  padding: 10px 12.5px;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.to_top_button:hover {
+  cursor: pointer;
+}
+
 .header_nav {
   display: flex;
   align-items: center;
@@ -40,7 +64,7 @@ header {
 
 .header_nav_link {
   color: rgba(0, 0, 0, 0.55);
-  text-decoration: none;
+
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px;
@@ -119,10 +143,16 @@ header {
 .section_container {
   width: 80%;
   margin: 0 auto;
+  padding-top: 75px;
+}
+
+.section_container:last-of-type {
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .section_heading {
-  width: 200px;
+  width: 250px;
   text-align: center;
   font-size: 22px;
   margin: 0 auto 20px auto;
@@ -141,7 +171,7 @@ header {
 
 .about_main_content h3 {
   font-size: 20px;
-  color: darkred;
+  color: firebrick;
   margin-bottom: 10px;
 }
 
@@ -166,6 +196,38 @@ header {
   color: sienna;
   font-size: 18px;
   margin-bottom: 5px;
+}
+
+.about_contact_info {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_info_header {
+  color: firebrick;
+  width: 50%;
+  margin: 10px auto;
+  padding: 7.5px 0;
+}
+
+.about_links_container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_link {
+  margin: 10px 0;
+}
+
+.about_link,
+.about_link:visited {
+  color: midnightblue;
+}
+
+.about_link:hover {
+  color: crimson;
 }
 
 .skills {
@@ -290,14 +352,6 @@ header {
   padding-left: 10px;
   text-align: left;
   line-height: 1.5;
-}
-
-.project_info_desc a {
-  text-decoration: none;
-}
-
-.project_info_desc a:visited {
-  color: black;
 }
 
 .project_info_desc a:hover {
