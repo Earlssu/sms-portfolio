@@ -141,7 +141,7 @@ header {
 
 .about_main_content h3 {
   font-size: 20px;
-  color: darkslateblue;
+  color: darkred;
   margin-bottom: 10px;
 }
 
@@ -289,6 +289,7 @@ header {
   width: 75%;
   padding-left: 10px;
   text-align: left;
+  line-height: 1.5;
 }
 
 .project_info_desc a {
