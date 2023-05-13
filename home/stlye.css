@@ -143,6 +143,7 @@ a:visited {
   width: 80%;
   margin: 0 auto;
   padding-top: 75px;
+  max-width: 1080px;
 }
 
 .section_container:last-of-type {
