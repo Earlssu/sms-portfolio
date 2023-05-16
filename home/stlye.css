@@ -32,6 +32,7 @@ header {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -160,44 +161,6 @@ a:visited {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.content_container {
-  display: flex;
-}
-
-.about_main_content {
-  width: 80%;
-  line-height: 2;
-}
-
-.about_main_content h3 {
-  font-size: 20px;
-  color: firebrick;
-  margin-bottom: 10px;
-}
-
-.about_main_content p {
-  margin-bottom: 20px;
-}
-
-.about_side_content {
-  padding: 20px 0 0 15px;
-  line-height: 1.5;
-}
-
-.side_content_list {
-  margin-bottom: 20px;
-}
-
-.side_content_list li {
-  padding: 5px 0 0 5px;
-}
-
-.side_content_header {
-  color: sienna;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
 .about_contact_info {
   text-align: center;
   display: flex;
@@ -263,20 +226,62 @@ a:visited {
   margin-bottom: 25px;
 }
 
-.project_name {
-  margin: 10px 0;
-  font-size: 20px;
+.project_title {
+  margin: 20px 0;
+  font-size: 22px;
   font-weight: bold;
+  color: sienna;
+}
+
+.project_info {
+  border-top: solid 1px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project_info_row {
+  display: flex;
+}
+
+.project_info_col_half {
+  width: 50%;
+}
+
+.project_info_col_third {
+  width: 33%;
+}
+
+.project_info_category {
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.project_info_title {
+  text-align: left;
+  width: 110px;
+  color: darkslateblue;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.project_info_desc {
+  padding-left: 10px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.project_info_desc a:hover {
   color: sienna;
 }
 
 .project_date {
   color: gray;
+  margin-top: 20px;
 }
 
 .project_desc {
   font-size: 18px;
-  padding: 10px 50px;
+  margin: 10px;
   line-height: 2;
 }
 
@@ -328,34 +333,6 @@ a:visited {
 .btn_next {
   top: 45%;
   right: 2%;
-}
-
-.project_info {
-  border-top: solid 1px rgba(0, 0, 0, 0.15);
-  width: 70%;
-  margin: 0 auto;
-}
-
-.project_info_category {
-  display: flex;
-  margin: 15px 0;
-}
-
-.project_info_title {
-  width: 25%;
-  text-align: left;
-  border-right: solid 1px gray;
-}
-
-.project_info_desc {
-  width: 75%;
-  padding-left: 10px;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.project_info_desc a:hover {
-  color: sienna;
 }
 
 .contact_form {
