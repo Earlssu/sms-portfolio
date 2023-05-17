@@ -1,3 +1,8 @@
+:root {
+  --info-header-color: firebrick;
+  --project-header-color: sienna;
+}
+
 body,
 header {
   font-family: "MaruBuriSemiBold";
@@ -12,10 +17,6 @@ body {
     rgba(255, 247, 224, 1) 50%,
     rgba(219, 219, 219, 1) 100%
   );
-}
-
-strong {
-  color: indigo;
 }
 
 section {
@@ -168,7 +169,7 @@ a:visited {
 }
 
 .contact_info_header {
-  color: firebrick;
+  color: var(--info-header-color);
   width: 50%;
   margin: 10px auto;
   padding: 7.5px 0;
@@ -206,7 +207,7 @@ a:visited {
 
 .skills_category_title {
   font-size: 18px;
-  color: sienna;
+  color: var(--info-header-color);
   font-weight: bold;
   margin: 15px;
 }
@@ -230,7 +231,7 @@ a:visited {
   margin: 20px 0;
   font-size: 22px;
   font-weight: bold;
-  color: sienna;
+  color: var(--project-header-color);
 }
 
 .project_info {
@@ -247,10 +248,6 @@ a:visited {
   width: 50%;
 }
 
-.project_info_col_third {
-  width: 33%;
-}
-
 .project_info_category {
   display: flex;
   margin: 15px 0;
@@ -260,7 +257,7 @@ a:visited {
 .project_info_title {
   text-align: left;
   width: 110px;
-  color: darkslateblue;
+  color: var(--info-header-color);
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -271,7 +268,7 @@ a:visited {
 }
 
 .project_info_desc a:hover {
-  color: sienna;
+  color: var(--info-header-color);
 }
 
 .project_date {
@@ -283,6 +280,14 @@ a:visited {
   font-size: 18px;
   margin: 10px;
   line-height: 2;
+}
+
+.project_desc p {
+  display: none;
+}
+
+.project_desc .active {
+  display: block;
 }
 
 .project_slider {

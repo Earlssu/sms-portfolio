@@ -68,9 +68,13 @@ const p1MaxIdx = p1Slides.length - 1;
 p1Slides.forEach((slide, idx) => {
   slide.style.transform = `translateX(${idx * 100}%)`;
   p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+  document.querySelector(`.p1_desc${p1currentIdx + 1}`).classList.add("active");
 });
 
 p1NextBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p1_desc${p1currentIdx + 1}`)
+    .classList.remove("active");
   if (p1currentIdx === p1MaxIdx) {
     p1currentIdx = 0;
   } else {
@@ -80,10 +84,16 @@ p1NextBtn.addEventListener("click", () => {
   p1Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
     p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+    document
+      .querySelector(`.p1_desc${p1currentIdx + 1}`)
+      .classList.add("active");
   });
 });
 
 p1PrevBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p1_desc${p1currentIdx + 1}`)
+    .classList.remove("active");
   if (p1currentIdx === 0) {
     p1currentIdx = p1MaxIdx;
   } else {
@@ -92,6 +102,11 @@ p1PrevBtn.addEventListener("click", () => {
 
   p1Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
+    p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+
+    document
+      .querySelector(`.p1_desc${p1currentIdx + 1}`)
+      .classList.add("active");
   });
 });
 
