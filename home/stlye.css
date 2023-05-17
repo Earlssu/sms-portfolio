@@ -1,6 +1,9 @@
 :root {
   --info-header-color: firebrick;
-  --project-header-color: sienna;
+  --project-title-color: rgb(204, 110, 67);
+  --project-info-header: rgb(127, 92, 77);
+  --slider-arrow-color: rgb(237, 200, 130);
+  --slider-arrow-hover: darkorange;
 }
 
 body,
@@ -231,7 +234,7 @@ a:visited {
   margin: 20px 0;
   font-size: 22px;
   font-weight: bold;
-  color: var(--project-header-color);
+  color: var(--project-title-color);
 }
 
 .project_info {
@@ -257,7 +260,7 @@ a:visited {
 .project_info_title {
   text-align: left;
   width: 110px;
-  color: var(--info-header-color);
+  color: var(--project-info-header);
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -313,7 +316,16 @@ a:visited {
   object-fit: cover;
 }
 
+.slider_number_wrapper {
+  height: 20px;
+  position: relative;
+  text-align: center;
+}
+
 .slider_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -323,21 +335,21 @@ a:visited {
   cursor: pointer;
   background-color: transparent;
   font-size: 26px;
-  color: white;
+  color: var(--slider-arrow-color);
 }
 
 .slider_button:hover {
-  color: orange;
+  color: var(--slider-arrow-hover);
 }
 
 .btn_prev {
-  top: 45%;
-  left: 2%;
+  top: -50%;
+  left: 25%;
 }
 
 .btn_next {
-  top: 45%;
-  right: 2%;
+  top: -50%;
+  right: 25%;
 }
 
 .contact_form {
