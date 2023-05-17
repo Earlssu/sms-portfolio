@@ -75,6 +75,7 @@ p1NextBtn.addEventListener("click", () => {
   document
     .querySelector(`.p1_desc${p1currentIdx + 1}`)
     .classList.remove("active");
+
   if (p1currentIdx === p1MaxIdx) {
     p1currentIdx = 0;
   } else {
@@ -94,6 +95,7 @@ p1PrevBtn.addEventListener("click", () => {
   document
     .querySelector(`.p1_desc${p1currentIdx + 1}`)
     .classList.remove("active");
+
   if (p1currentIdx === 0) {
     p1currentIdx = p1MaxIdx;
   } else {
@@ -120,9 +122,14 @@ const p2MaxIdx = p2Slides.length - 1;
 p2Slides.forEach((slide, idx) => {
   slide.style.transform = `translateX(${idx * 100}%)`;
   p2SliderPageNum.textContent = `${p2currentIdx + 1} / ${p2MaxIdx + 1}`;
+  document.querySelector(`.p2_desc${p2currentIdx + 1}`).classList.add("active");
 });
 
 p2NextBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p2_desc${p2currentIdx + 1}`)
+    .classList.remove("active");
+
   if (p2currentIdx === p2MaxIdx) {
     p2currentIdx = 0;
   } else {
@@ -132,10 +139,17 @@ p2NextBtn.addEventListener("click", () => {
   p2Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p2currentIdx)}%)`;
     p2SliderPageNum.textContent = `${p2currentIdx + 1} / ${p2MaxIdx + 1}`;
+    document
+      .querySelector(`.p2_desc${p2currentIdx + 1}`)
+      .classList.add("active");
   });
 });
 
 p2PrevBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p2_desc${p2currentIdx + 1}`)
+    .classList.remove("active");
+
   if (p2currentIdx === 0) {
     p2currentIdx = p2MaxIdx;
   } else {
@@ -144,5 +158,10 @@ p2PrevBtn.addEventListener("click", () => {
 
   p2Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p2currentIdx)}%)`;
+    p2SliderPageNum.textContent = `${p2currentIdx + 1} / ${p2MaxIdx + 1}`;
+
+    document
+      .querySelector(`.p2_desc${p2currentIdx + 1}`)
+      .classList.add("active");
   });
 });
