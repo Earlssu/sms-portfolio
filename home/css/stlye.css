@@ -1,0 +1,151 @@
+:root {
+  --hero-font-color: darkslategrey;
+  --info-header-color: firebrick;
+  --project-title-color: rgb(204, 110, 67);
+  --project-info-header: rgb(127, 92, 77);
+  --slider-arrow-color: burlywood;
+  --slider-arrow-hover: rgb(255, 201, 99);
+}
+
+body,
+header {
+  font-family: "MaruBuriSemiBold";
+}
+
+body {
+  padding-top: 50px;
+  background: rgb(219, 219, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 219, 219, 1) 0%,
+    rgba(255, 247, 224, 1) 50%,
+    rgba(219, 219, 219, 1) 100%
+  );
+}
+
+section {
+  padding: 25px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.to_top_button {
+  position: fixed;
+  font-size: 30px;
+  padding: 10px 13px;
+  bottom: 15px;
+  right: 15px;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.to_top_button:hover {
+  cursor: pointer;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  background-color: white;
+}
+
+.header_nav_link {
+  color: rgba(0, 0, 0, 0.55);
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.header_nav_link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: peru;
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header_nav_link:hover {
+  color: black;
+}
+
+.header_nav_link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.section_container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 75px;
+  max-width: 1080px;
+}
+
+.section_container:last-of-type {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.section_heading {
+  width: 250px;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto 20px auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  padding: 50px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer_icons_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 28px;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.footer_link {
+  transition: all 0.5s;
+}
+
+.footer_link:hover,
+.footer_link:visited:hover {
+  font-size: 32px;
+  color: burlywood;
+}
+
+.footer_link:visited {
+  color: white;
+}
