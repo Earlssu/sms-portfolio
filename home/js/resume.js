@@ -1,3 +1,8 @@
+const phoneNumber = document.getElementById("from_phone");
+const phoneValidationMessage = document.getElementById(
+  "phone_validation_message"
+);
+
 phoneNumber.addEventListener("keyup", () => {
   phoneNumber.value = phoneNumber.value
     .replace(/[^0-9]/g, "")
