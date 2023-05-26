@@ -24,7 +24,6 @@
     ></script>
     <script type="text/javascript">
       (function () {
-        // https://dashboard.emailjs.com/admin/account
         emailjs.init("1ESb2n3Ps-FIt9r51");
       })();
     </script>
@@ -33,10 +32,10 @@
     <header>
       <ul class="header_nav">
         <li><a class="header_nav_link" href="#">Home</a></li>
-        <li><a class="header_nav_link" href="#about">About Me</a></li>
-        <li><a class="header_nav_link" href="#stacks">Stacks</a></li>
-        <li><a class="header_nav_link" href="#projects">Projects</a></li>
-        <li><a class="header_nav_link" href="#contact">Contact</a></li>
+        <li><a class="header_nav_link" href="/home/index.html">Resume</a></li>
+        <li>
+          <a class="header_nav_link" href="/home/projects.html">Projects</a>
+        </li>
       </ul>
     </header>
 
@@ -83,340 +82,190 @@
       <ul class="skills">
         <div class="skills_category">
           <h4 class="skills_category_title">Frontend</h4>
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/javascript-F7A81B?style=for-the-badge&logo=javascript&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/redux-9999FF?style=for-the-badge&logo=redux&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
-          />
-        </div>
-        <div class="skills_category">
-          <h4 class="skills_category_title">Version Control</h4>
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"
-          />
-          <img
-            class="skills_image"
-            src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"
-          />
-          <div>
-            <h4 class="skills_category_title">Communication</h4>
+          <div class="skills_category_desc">
             <img
               class="skills_image"
-              src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jirasoftware&logoColor=white"
+              src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
             />
+            <p>
+              접근성(Accessibility)의 중요성을 이해하고 있어 필요에 따른 시맨틱
+              요소를 사용할 수 있습니다.
+            </p>
+          </div>
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            />
+            <p>
+              mobile-first 개발이 가능하며 root 요소를 사용한 확장성을 고려할 수
+              있습니다.
+            </p>
+          </div>
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/javascript-F7A81B?style=for-the-badge&logo=javascript&logoColor=white"
+            />
+            <p>
+              ES6 문법에 능숙하며 JavaScript의 구동 원리를 이해하고 있습니다.
+            </p>
+          </div>
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+            />
+            <p>
+              Tuple, Enum, Interface 등 기본 문법의 명확한 사용법을 알고 있으며
+              개발 단계에서 타입 에러 문제를 이해하고 해결할 수 있습니다.
+            </p>
+          </div>
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
+            />
+            <p>
+              Virtual DOM을 기반으로 한 리액트의 작동 원리와 장단점을 명확히
+              이해하고 있습니다. 컴포넌트의 재사용이 가능한 코드를 지향하고
+              있으며 서버를 통한 데이터 통신 시 조건부 랜더링을 구현할 수
+              있습니다. 프로젝트의 확장성을 고려해 react-router, redux,
+              typescript 등 다양한 써드파티 라이브러리를 함께 사용해 개발한
+              경험이 있습니다.
+            </p>
+          </div>
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/redux-9999FF?style=for-the-badge&logo=redux&logoColor=white"
+            />
+            <p>
+              redux 관리를 통해 전역 state로 관리가 필요할 때와 아닐 때를 구분할
+              수 있으며 필요에 따라 적절한 액션과 액션 생성 함수를 작성할 수
+              있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"
+            />
+            <p>
+              무분별한 컴포넌트 사용을 자제하고 props 전달을 통한 조건부
+              랜더링을 통해 Dark Mode를 구현한 경험이 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"
+            />
+            <p>
+              Bootstrap의 내부 클래스에 친숙하고 스타일링과 기능을 덮어씌울 줄
+              압니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
+            />
+            <p>
+              jQuery의 일부 기능만을 가져와 웹 페이지의 퍼포먼스를 고려한 개발이
+              가능합니다.
+            </p>
+          </div>
+
+          <h4 class="skills_category_title">Version Control</h4>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
+            />
+            <p>
+              git 명령어를 잘 숙지하고 있으며 로컬 단계에서 필요한 작업들을
+              완료한 후 기록하고 버전을 관리할 수 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/githubactions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"
+            />
+            <p>
+              yaml 문서를 작성하고 자동화 배포가 가능하게 연동할 수 있습니다.
+              자동화 배포 과정 중 발생하는 오류를 이해하고 해결할 수 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"
+            />
+            <p>
+              동적 배포의 장점을 이해하고 버킷 생성 및 설정을 변경할 수
+              있습니다.
+            </p>
+          </div>
+
+          <h4 class="skills_category_title">Communication</h4>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
+            />
+            <p>
+              Github Projects를 활용해 칸반 보드에 이슈를 공유하고 업데이트할 수
+              있습니다. 코드 리뷰를 통한 코드 생산성을 향상시키는 방법과 옳바른
+              커뮤니케이션 방식에 대해 숙지하고 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
             <img
               class="skills_image"
               src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
             />
+            <p>
+              유저플로우와 와이어프레임을 제작할 수 있고, Prototype 탭을 활용해
+              시현이 필요한 기능들을 추가할 수 있습니다. Figma에서 자체적으로
+              제공하는 플러그인을 활용해 완성도를 높일 수 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
             <img
               class="skills_image"
               src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"
             />
+            <p>
+              프로젝트 문서화가 가능하고, 북마크 등을 활용해 필요한 링크를
+              남겨놓을 수 있습니다. 가독성을 높이기 위한 페이지 분할이 가능하며,
+              데이터베이스를 링크하여 다른 페이지의 자료를 참고할 수 있게 작성할
+              수 있습니다.
+            </p>
+          </div>
+
+          <div class="skills_category_desc">
+            <img
+              class="skills_image"
+              src="https://img.shields.io/badge/jira-0052CC?style=for-the-badge&logo=jirasoftware&logoColor=white"
+            />
+            <p>
+              회의를 통해 이슈를 공유하고 기록할 수 있습니다. 맡은 테스크를
+              자신에게 할당하고 예상 소요 시간을 기록할 수 있으며, 필요한 부분에
+              대해 해당 테스크를 통해 공유할 수 있습니다.
+            </p>
           </div>
         </div>
-      </ul>
-    </section>
-    <section class="section_container" id="projects">
-      <h2 class="section_heading">Projects</h2>
-      <ul class="projects">
-        <li class="projects_item">
-          <h3 class="project_title">L'acier 남성 전용 화장품 쇼핑몰</h3>
-          <div class="project_info">
-            <div class="project_info_row">
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">진행 기간</span>
-                <span class="project_info_desc"> 2023.01 - 2023.02 (4주) </span>
-              </div>
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">프로젝트 규모</span
-                ><span class="project_info_desc"
-                  >6인 프로젝트 (FE 3 / BE 3)</span
-                >
-              </div>
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기능</span>
-              <span class="project_info_desc"
-                >로그인, 회원 정보 조회 및 수정, 장바구니 추가, 결제, 구독
-                시스템</span
-              >
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기술스택</span
-              ><span class="project_info_desc">
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/redux-9999FF?style=for-the-badge&logo=redux&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                />
-              </span>
-            </div>
-            <div class="project_info_row">
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">GitHub</span>
-                <span class="project_info_desc"
-                  ><a href="https://github.com/codestates-seb/seb41_main_002"
-                    ><i class="fa-solid fa-code-merge"></i> 링크</a
-                  ></span
-                >
-              </div>
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">배포 URL</span>
-                <span class="project_info_desc"
-                  ><a
-                    href="http://seb41team02.s3-website.ap-northeast-2.amazonaws.com/"
-                    ><i class="fa-solid fa-desktop"></i> 링크</a
-                  ></span
-                >
-              </div>
-            </div>
-            <div class="project_info_row">
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">발표 영상</span>
-                <span class="project_info_desc"
-                  ><a href="https://www.youtube.com/watch?v=ioL7UFwTjPs"
-                    ><i class="fa-brands fa-youtube"></i> 링크</a
-                  ></span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project_slider">
-            <div class="project_slide project_01_slide">
-              <img src="assets/project_01_00.png" alt="" />
-            </div>
-            <div class="project_slide project_01_slide">
-              <img src="assets/project_01_01.png" alt="" />
-            </div>
-            <div class="project_slide project_01_slide">
-              <img src="assets/project_01_02.png" alt="" />
-            </div>
-            <div class="project_slide project_01_slide">
-              <img src="assets/project_01_03.png" alt="" />
-            </div>
-          </div>
-          <div class="slider_number_wrapper">
-            <button class="slider_button btn_next btn_01_next">
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </button>
-            <div class="slider_page_number page_number_01"></div>
-            <button class="slider_button btn_prev btn_01_prev">
-              <i class="fa-solid fa-circle-chevron-left"></i>
-            </button>
-          </div>
-          <div class="project_desc">
-            <p class="p1_desc1">
-              기본 랜딩페이지입니다. 웹 페이지의 특성인 피부타입 검사와 쇼핑몰
-              이벤트를 확인할 수 있는 캐러셀 슬라이더가 있습니다. 또한, 이 달의
-              최고 매출 제품을 바로 확인할 수 있도록 페이지가 링크되어 있습니다.
-            </p>
-            <p class="p1_desc2">
-              기본 랜딩페이지에서 리다이렉트된 이벤트 상세 페이지입니다. 이벤트
-              추가 및 수정은 서버를 통해 업로드가 가능합니다.
-            </p>
-            <p class="p1_desc3">
-              회원 정보 조회 페이지입니다. 해당 사용자의 피부 타입 검사 및 구독
-              여부를 확인하고 관련 페이지로 이동할 수 있습니다.
-            </p>
-            <p class="p1_desc4">
-              회원 정보 수정 페이지입니다. 생년월일, 아이디를 제외한 기본 정보를
-              모두 수정할 수 있습니다. React-daum-postcode 라이브러리를 활용한
-              사용자의 배송지에 대한 CRUD가 가능합니다.
-            </p>
-          </div>
-        </li>
-        <li class="projects_item">
-          <h3 class="project_title">Dodge.gg 전적 검색 사이트</h3>
-          <div class="project_info">
-            <div class="project_info_row">
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">진행 기간</span>
-                <span class="project_info_desc"> 2022.12 (3주) </span>
-              </div>
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">프로젝트 규모</span>
-                <span class="project_info_desc">3인 프로젝트 (FE 3)</span>
-              </div>
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기능</span>
-              <span class="project_info_desc"
-                >전적 검색, 캐릭터 별 추천 및 통계 확인</span
-              >
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기술스택</span>
-              <span class="project_info_desc">
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                />
-              </span>
-            </div>
-
-            <div class="project_info_category">
-              <span class="project_info_title">GitHub</span>
-              <span class="project_info_desc">
-                <a href="https://github.com/limdumb/DodGe.gg">
-                  <i class="fa-solid fa-code-merge"></i> 링크
-                </a>
-              </span>
-            </div>
-          </div>
-          <div class="project_slider">
-            <div class="project_slide project_02_slide">
-              <img src="assets/project_02_00.jpg" alt="" />
-            </div>
-            <div class="project_slide project_02_slide">
-              <img src="assets/project_02_01.jpg" alt="" />
-            </div>
-            <div class="project_slide project_02_slide">
-              <img src="assets/project_02_02.jpg" alt="" />
-            </div>
-          </div>
-          <div class="slider_number_wrapper">
-            <button class="slider_button btn_next btn_02_next">
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </button>
-            <div class="slider_page_number page_number_02"></div>
-            <button class="slider_button btn_prev btn_02_prev">
-              <i class="fa-solid fa-circle-chevron-left"></i>
-            </button>
-          </div>
-          <div class="project_desc">
-            <p class="p2_desc1">
-              기본 랜딩페이지입니다. 기본적인 챔피언 검색 필터링 및 소환사 검색
-              기능이 제공됩니다.
-            </p>
-            <p class="p2_desc2">
-              랜딩페이지에서 챔피언 선택 시 챔피언 상세 정보가 제공됩니다.
-              리액트의 SPA 특성을 활용해 기존 페이지에서 재랜더링되어 챔피언
-              정보를 제공합니다. 해당 챔피언에 대한 통계, 아이템 및 룬 가이드,
-              카운터 챔피언과 통계를 확인할 수 있습니다.
-            </p>
-            <p class="p2_desc3">
-              기존 페이지에서 재랜더링된 소환사 검색 페이지입니다. 최근 20게임의
-              전체 전적과 랭크 게임, 일반 게임을 필터링을 통해 구분해서 확인할
-              수 있습니다. 단, 전체 게임의 수는 동일하기 때문에 해당 카테고리의
-              게임을 진행하지 않았다면 표시되지 않습니다.
-            </p>
-          </div>
-        </li>
-        <li class="projects_item">
-          <h3 class="project_title">Service Station Web Page</h3>
-          <div class="project_info">
-            <div class="project_info_row">
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">진행 기간</span>
-                <span class="project_info_desc">
-                  2020.03 - 2020.05 (10주)
-                </span>
-              </div>
-              <div class="project_info_category project_info_col_half">
-                <span class="project_info_title">프로젝트 규모</span>
-                <span class="project_info_desc">14인 프로젝트</span>
-              </div>
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기능</span>
-              <span class="project_info_desc"
-                >봉사 시간 기록, 학생 모집 및 관리, 카풀 커뮤니티</span
-              >
-            </div>
-            <div class="project_info_category">
-              <span class="project_info_title">주요 기술스택</span>
-              <span class="project_info_desc">
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/javascript-F7A81B?style=for-the-badge&logo=javascript&logoColor=white"
-                />
-                <img
-                  class="skills_image"
-                  src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
-                />
-              </span>
-            </div>
-
-            <div class="project_info_category">
-              <span class="project_info_title">GitHub</span>
-              <span class="project_info_desc">
-                <a href="https://github.com/austin-college/srv">
-                  <i class="fa-solid fa-code-merge"></i> 링크
-                </a>
-              </span>
-            </div>
-          </div>
-
-          <div class="project_desc">
-            Service Station은 재학생들의 봉사 시간을 기록 및 관리하는 Austin
-            College의 실제 부서입니다. Michael Higgs 교수님이 시니어 개발자
-            역할을 맡으시고, 팀의 전반적인 관리와 회의를 주도하셨습니다. 웹
-            페이지는 Java Spring을 활용해 BE와 FE를 함께 개발했습니다.
-          </div>
-        </li>
       </ul>
     </section>
 

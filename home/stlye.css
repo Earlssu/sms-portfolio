@@ -205,19 +205,31 @@ a:visited {
 }
 
 .skills_category {
-  width: 50%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills_category_title {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--info-header-color);
   font-weight: bold;
-  margin: 15px;
+  margin: 20px 0;
+}
+
+.skills_category_desc {
+  display: flex;
+  margin: 5px 0;
+  line-height: 1.75;
 }
 
 .skills_image {
-  height: 35px;
+  width: 20%;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.skills_category_desc p {
+  width: 80%;
 }
 
 .projects_item {
