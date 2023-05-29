@@ -1,6 +1,9 @@
+body {
+  font-size: 18px;
+}
+
 .hero_container {
   margin-top: 50px;
-  height: 100vh;
 }
 
 .hero_heading {
@@ -15,7 +18,7 @@
 
 .hero_heading_strong {
   animation: fadeIn03 1s ease-in-out both;
-  color: midnightblue;
+  color: var(--link-color);
   animation-delay: 1s;
 }
 
@@ -37,11 +40,10 @@
   animation: fadeIn02 1s ease-in-out both;
   animation-delay: 2.5s;
   line-height: 2;
-  font-size: 18px;
 }
 
 .hero_desc strong {
-  color: firebrick;
+  color: var(--info-header-color);
 }
 
 .hero_buttons_wrapper {
@@ -52,11 +54,50 @@
 
 .hero_button,
 .hero_button:visited {
-  color: midnightblue;
+  color: var(--link-color);
 }
 
 .hero_button:hover {
-  color: crimson;
+  color: var(--link-hover-color);
+}
+
+.section_container {
+  margin: 50px;
+  opacity: 0;
+  animation: fadeIn02 1s ease-in-out both;
+  animation-delay: 3s;
+}
+
+.about_contact_info {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_info_header {
+  color: var(--info-header-color);
+  width: 50%;
+  margin: 10px auto;
+  padding: 7.5px 0;
+}
+
+.about_links_container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_link {
+  margin: 10px 0;
+}
+
+.about_link,
+.about_link:visited {
+  color: var(--link-color);
+}
+
+.about_link:hover {
+  color: var(--link-hover-color);
 }
 
 @keyframes fadeIn01 {

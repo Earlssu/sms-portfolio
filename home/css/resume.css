@@ -3,15 +3,7 @@ section {
 }
 
 .hero_wrapper {
-  height: 300px;
   padding: 0px;
-}
-
-.hero_profile_img {
-  margin-top: 10px;
-  height: 200px;
-  border: double burlywood 7.5px;
-  float: right;
 }
 
 .hero_desc {
@@ -58,38 +50,6 @@ section {
 .hero_intro {
   font-size: 18px;
   line-height: 2;
-}
-
-.about_contact_info {
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.contact_info_header {
-  color: var(--info-header-color);
-  width: 50%;
-  margin: 10px auto;
-  padding: 7.5px 0;
-}
-
-.about_links_container {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.about_link {
-  margin: 10px 0;
-}
-
-.about_link,
-.about_link:visited {
-  color: midnightblue;
-}
-
-.about_link:hover {
-  color: crimson;
 }
 
 .skills {
