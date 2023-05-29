@@ -1,5 +1,6 @@
 .hero_container {
   margin-top: 50px;
+  height: 100vh;
 }
 
 .hero_heading {
@@ -7,22 +8,61 @@
   padding: 10px 0;
   margin: 10px auto;
   width: fit-content;
-  color: firebrick;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  opacity: 0;
   animation: fadeIn01 1s ease-in-out both;
 }
 
+.hero_heading_strong {
+  animation: fadeIn03 1s ease-in-out both;
+  color: midnightblue;
+  animation-delay: 1s;
+}
+
+.hero_desc_wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
 .hero_profile_img {
-  width: 500px;
+  width: 50%;
   opacity: 0;
   animation: fadeIn02 1s ease-in-out both;
-  animation-delay: 0.5s;
+  animation-delay: 2s;
+}
+
+.hero_desc {
+  padding: 0 10px;
+  opacity: 0;
+  animation: fadeIn02 1s ease-in-out both;
+  animation-delay: 2.5s;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.hero_desc strong {
+  color: firebrick;
+}
+
+.hero_buttons_wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero_button,
+.hero_button:visited {
+  color: midnightblue;
+}
+
+.hero_button:hover {
+  color: crimson;
 }
 
 @keyframes fadeIn01 {
   from {
     opacity: 0;
-    transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, 105%, 0);
   }
   to {
     opacity: 1;
@@ -33,10 +73,19 @@
 @keyframes fadeIn02 {
   from {
     opacity: 0;
-    transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, 2%, 0);
   }
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn03 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
