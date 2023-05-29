@@ -1,10 +1,26 @@
-.hero {
+.hero_wrapper {
   height: 300px;
   padding: 0px;
 }
 
+.hero_profile_img {
+  margin-top: 10px;
+  height: 200px;
+  border: double burlywood 7.5px;
+  float: right;
+}
+
+.hero_desc {
+  line-height: 1.75;
+}
+
+.hero_desc_title {
+  font-size: 18px;
+  color: var(--hero-font-color);
+}
+
 .hero_bg {
-  background-image: url("./assets/hero.jpg");
+  background-image: url("./../assets/hero.jpg");
   filter: blur(8px);
   -webkit-filter: blur(1px);
   height: 100%;
@@ -28,16 +44,11 @@
   padding: 20px;
 }
 
-.hero_desc {
-  position: absolute;
-  top: 35%;
-  left: 5%;
-  width: 80%;
-}
 .hero_heading {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
+  color: var(--info-header-color);
 }
 
 .hero_intro {
