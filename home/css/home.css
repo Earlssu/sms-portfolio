@@ -1,0 +1,17 @@
+.hero_container {
+  margin-top: 50px;
+}
+
+.hero_heading {
+  font-size: 30px;
+  padding: 10px 0;
+  margin: 10px auto;
+  width: fit-content;
+  color: firebrick;
+  border-bottom: 1px solid gray;
+}
+
+.hero_profile_img {
+  width: 500px;
+  animation-delay: 0.5s;
+}

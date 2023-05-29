@@ -1,3 +1,7 @@
+section {
+  transition: all 1s;
+}
+
 .hero_wrapper {
   height: 300px;
   padding: 0px;
