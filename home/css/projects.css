@@ -82,6 +82,17 @@ s .project_date {
   display: block;
 }
 
+.page_title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--hero-font-color);
+}
+
+.page_feature {
+  padding-left: 5%;
+  text-align: start;
+}
+
 .project_slider {
   margin: 20px auto 10px auto;
   width: 90%;

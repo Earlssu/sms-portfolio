@@ -1,13 +1,20 @@
 const p1Slides = document.querySelectorAll(".project_01_slide");
 const p1NextBtn = document.querySelector(".btn_01_next");
 const p1PrevBtn = document.querySelector(".btn_01_prev");
-const p1SliderPageNum = document.querySelector(".page_number_01");
+const p1SliderPageNames = [
+  "기본 랜딩 페이지",
+  "내 정보",
+  "내 정보 수정",
+  "이벤트 상세 페이지",
+  "비밀번호 변경 페이지",
+];
+const p1SliderPageName = document.querySelector(".page_title_01");
 let p1currentIdx = 0;
 const p1MaxIdx = p1Slides.length - 1;
 
 p1Slides.forEach((slide, idx) => {
   slide.style.transform = `translateX(${idx * 100}%)`;
-  p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+  p1SliderPageName.textContent = `${p1SliderPageNames[p1currentIdx]}`;
   document.querySelector(`.p1_desc${p1currentIdx + 1}`).classList.add("active");
 });
 
@@ -24,7 +31,7 @@ p1NextBtn.addEventListener("click", () => {
 
   p1Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
-    p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+    p1SliderPageName.textContent = `${p1SliderPageNames[p1currentIdx]}`;
     document
       .querySelector(`.p1_desc${p1currentIdx + 1}`)
       .classList.add("active");
@@ -44,7 +51,7 @@ p1PrevBtn.addEventListener("click", () => {
 
   p1Slides.forEach((slide, idx) => {
     slide.style.transform = `translateX(${100 * (idx - p1currentIdx)}%)`;
-    p1SliderPageNum.textContent = `${p1currentIdx + 1} / ${p1MaxIdx + 1}`;
+    p1SliderPageName.textContent = `${p1SliderPageNames[p1currentIdx]}`;
 
     document
       .querySelector(`.p1_desc${p1currentIdx + 1}`)
