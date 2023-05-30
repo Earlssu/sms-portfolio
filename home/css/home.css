@@ -2,10 +2,6 @@ body {
   font-size: 18px;
 }
 
-.hero_container {
-  margin-top: 50px;
-}
-
 .hero_heading {
   font-size: 30px;
   padding: 10px 0;
@@ -113,5 +109,16 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+
+  .hero_container {
+    width: 90%;
+    margin: 0 auto;
   }
 }

@@ -36,6 +36,10 @@ header {
   z-index: 100;
 }
 
+main {
+  padding-top: 75px;
+}
+
 footer {
   margin-top: auto;
 }
@@ -107,8 +111,8 @@ a:visited {
   width: 85%;
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 75px;
   max-width: 1080px;
+  margin-bottom: 75px;
 }
 
 .section_container:last-of-type {
