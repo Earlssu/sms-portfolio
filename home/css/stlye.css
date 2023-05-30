@@ -1,6 +1,6 @@
 :root {
-  --hero-font-color: darkblue;
-  --link-color: midnightblue;
+  --hero-font-color: midnightblue;
+  --link-color: rgb(100, 100, 100);
   --link-hover-color: crimson;
   --info-header-color: firebrick;
   --project-title-color: rgb(204, 110, 67);
