@@ -138,30 +138,57 @@
               </button>
             </div>
             <div class="project_desc">
-              <ul class="p1_desc1">
-                <li class="page_feature">로그인</li>
-                <li class="page_feature">피부 타입 검사</li>
-                <li class="page_feature">이벤트 캐러셀 슬라이더</li>
-                <li class="page_feature">최고 매출 제품 확인</li>
-              </ul>
-              <ul class="p1_desc2">
-                기본 랜딩페이지에서 리다이렉트된 이벤트 상세 페이지입니다.
-                이벤트 추가 및 수정은 서버를 통해 업로드가 가능합니다.
-              </ul>
-              <ul class="p1_desc3">
-                회원 정보 조회 페이지입니다. 해당 사용자의 피부 타입 검사 및
-                구독 여부를 확인하고 관련 페이지로 이동할 수 있습니다.
-              </ul>
-              <ul class="p1_desc4">
-                회원 정보 수정 페이지입니다. 생년월일, 아이디를 제외한 기본
-                정보를 모두 수정할 수 있습니다. React-daum-postcode 라이브러리를
-                활용한 사용자의 배송지에 대한 CRUD가 가능합니다.
-              </ul>
-              <ul class="p1_desc5">
-                회원 정보 수정 페이지입니다. 생년월일, 아이디를 제외한 기본
-                정보를 모두 수정할 수 있습니다. React-daum-postcode 라이브러리를
-                활용한 사용자의 배송지에 대한 CRUD가 가능합니다.
-              </ul>
+              <p class="p1_desc1">
+                루트 디랙토리로 설정되어 있는 기본 페이지입니다.
+                <br />
+                주요 기능으로는
+                <strong class="desc_subject">캐러셀 슬라이더</strong>를 소스코드
+                없이 구현했습니다. useEffect와 종속성 배열을 사용해 해당
+                컴포넌트에 style 속성값 (translateX)을 부여해 실시간으로
+                슬라이더의 x 좌표값이 변동되도록 설정했습니다. DOM 접근을 피하기
+                위해 useRef를 사용해 해당 요소의 clientWidth값을 기반으로
+                슬라이드의 최대길이를 측정해 슬라이드의 범위 밖으로 이동되는
+                현상을 해결했습니다.
+              </p>
+              <p class="p1_desc2">
+                react-router를 통해 설정된 내 정보 페이지입니다.
+                <br />
+                사용자의 구독 여부, 피부 타입 검사 여부, 구매 내역 등 사용자의
+                현황에 따라 필요한 정보가 표시되도록
+                <strong class="desc_subject">조건부 랜더링</strong>을 통해
+                컴포넌트를 랜더링하도록 설정했습니다. 주문 내역을 확인할 때
+                아코디언 디자인을 채택해 클릭 시 상품명, 개수, 총 가격 등 자세한
+                정보를 볼 수 있도록 구현했습니다.
+              </p>
+              <p class="p1_desc3">
+                react-router를 통해 설정된 회원 정보 수정 페이지입니다.
+                <br />
+                주요 기능으로는
+                <strong class="desc_subject"> React-daum-postcode</strong>
+                라이브러리를 활용한
+                <strong class="desc_subject">배송지 CRUD</strong> 기능입니다.
+                API에서 제공하는 DaumPostcode 컴포넌트의 고유 속성 autoClose
+                속성에 false값을 할당해 주소지 선택 시 최상위 엘리먼트를
+                삭제하는 현상을 해결했습니다. <br />
+                배송지 추가, 삭제, 대표주소 변경 시 재랜더링이 되지 않던 현상을
+                해결하기 위해 별도의 상태값을 생성/할당한 후 useEffect와 종속성
+                배열을 통해 해당 상태값이 변동될 때마다 재랜더링되는 방법을
+                채택했습니다.
+              </p>
+              <p class="p1_desc4">
+                react-router를 통해 설정된 이벤트 상세 페이지입니다.
+                <br />
+                선택한 이벤트의 상세 내용이 적힌 이미지를 표시하고 별도의
+                이미지가 없을 시 텍스트를 추가할 수 있도록 설정했습니다.
+              </p>
+              <p class="p1_desc5">
+                react-router를 통해 설정된 비밀번호 재설정 페이지입니다.
+                <br />
+                데이터 패킷의 부담을 덜고 내 정보 수정 페이지의
+                <strong class="desc_subject">경량화</strong>를 위해 별도의
+                페이지로 작성했습니다. 재설정 시 기존 비밀번호와 새 비밀번호를
+                API 명세서에서 지정된 타입으로 Patch 요청을 보냅니다.
+              </p>
             </div>
           </li>
           <li class="projects_item">
@@ -227,23 +254,23 @@
               </button>
             </div>
             <div class="project_desc">
-              <ul class="p2_desc1">
+              <p class="p2_desc1">
                 기본 랜딩페이지입니다. 기본적인 챔피언 검색 필터링 및 소환사
                 검색 기능이 제공됩니다.
-              </ul>
-              <ul class="p2_desc2">
+              </p>
+              <p class="p2_desc2">
                 랜딩페이지에서 챔피언 선택 시 챔피언 상세 정보가 제공됩니다.
                 리액트의 SPA 특성을 활용해 기존 페이지에서 재랜더링되어 챔피언
                 정보를 제공합니다. 해당 챔피언에 대한 통계, 아이템 및 룬 가이드,
                 카운터 챔피언과 통계를 확인할 수 있습니다.
-              </ul>
-              <ul class="p2_desc3">
+              </p>
+              <p class="p2_desc3">
                 기존 페이지에서 재랜더링된 소환사 검색 페이지입니다. 최근
                 20게임의 전체 전적과 랭크 게임, 일반 게임을 필터링을 통해
                 구분해서 확인할 수 있습니다. 단, 전체 게임의 수는 동일하기
                 때문에 해당 카테고리의 게임을 진행하지 않았다면 표시되지
                 않습니다.
-              </ul>
+              </p>
             </div>
           </li>
           <li class="projects_item">
