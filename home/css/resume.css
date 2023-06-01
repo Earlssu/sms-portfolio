@@ -39,6 +39,27 @@
   width: 80%;
 }
 
+.education_category_title {
+  font-size: 20px;
+  color: var(--info-header-color);
+  margin: 20px 0;
+}
+
+.education_category_date {
+  color: darkslategray;
+}
+
+.education_category_summary {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.education_category_list {
+  padding-left: 10px;
+  list-style: inside bullet;
+  line-height: 1.75;
+}
+
 .contact_form {
   padding: 35px 0;
   border-radius: 5px;
@@ -94,4 +115,10 @@
 .form_button_submit:hover {
   cursor: pointer;
   background-color: rgba(194, 219, 255, 0.85);
+}
+
+@counter-style bullet {
+  system: cyclic;
+  symbols: "♯";
+  suffix: " ";
 }
