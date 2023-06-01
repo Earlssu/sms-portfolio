@@ -72,7 +72,6 @@
 .page_title {
   margin-top: 20px;
   font-size: 18px;
-  font-weight: bold;
   color: var(--hero-font-color);
 }
 
@@ -137,4 +136,10 @@
 .btn_next {
   top: -50%;
   right: 25%;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 1023px) {
 }
