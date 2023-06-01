@@ -7,6 +7,25 @@
   color: var(--hero-font-color);
 }
 
+.about_links_wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_link {
+  margin: 10px 0;
+}
+
+.about_link,
+.about_link:visited {
+  color: var(--link-color);
+}
+
+.about_link:hover {
+  color: var(--link-hover-color);
+}
+
 .skills {
   display: flex;
   margin: 0 auto;
