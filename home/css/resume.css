@@ -1,3 +1,12 @@
+.about_name {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.name_link:hover {
+  color: var(--link-hover-color);
+}
+
 .about_desc {
   line-height: 1.75;
 }
@@ -5,6 +14,25 @@
 .about_desc_title {
   font-size: 18px;
   color: var(--hero-font-color);
+}
+
+.about_links_wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about_link {
+  margin: 10px 0;
+}
+
+.about_link,
+.about_link:visited {
+  color: var(--link-color);
+}
+
+.about_link:hover {
+  color: var(--link-hover-color);
 }
 
 .skills {
@@ -37,6 +65,30 @@
 
 .skills_category_desc p {
   width: 80%;
+}
+
+.section_category {
+  padding-top: 10px;
+}
+
+.section_category_title {
+  font-size: 20px;
+  color: var(--info-header-color);
+  margin: 20px 0;
+}
+
+.section_category_date {
+  color: var(--section-sub-color);
+}
+
+.section_category_summary {
+  margin: 15px 0 10px 0;
+}
+
+.section_category_list {
+  padding-left: 10px;
+  list-style: inside bullet;
+  line-height: 1.75;
 }
 
 .contact_form {
@@ -94,4 +146,10 @@
 .form_button_submit:hover {
   cursor: pointer;
   background-color: rgba(194, 219, 255, 0.85);
+}
+
+@counter-style bullet {
+  system: cyclic;
+  symbols: "♯";
+  suffix: " ";
 }
