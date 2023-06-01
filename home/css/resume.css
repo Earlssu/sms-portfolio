@@ -39,42 +39,25 @@
   width: 80%;
 }
 
-.education_category_title {
+.section_category {
+  padding-top: 10px;
+}
+
+.section_category_title {
   font-size: 20px;
   color: var(--info-header-color);
   margin: 20px 0;
 }
 
-.education_category_date {
-  color: darkslategray;
+.section_category_date {
+  color: var(--section-sub-color);
 }
 
-.education_category_summary {
+.section_category_summary {
   margin: 15px 0 10px 0;
 }
 
-.education_category_list {
-  padding-left: 10px;
-  list-style: inside bullet;
-  line-height: 1.75;
-}
-
-.career_category_title {
-  font-size: 20px;
-  color: var(--info-header-color);
-  margin: 20px 0;
-}
-
-.career_category_date {
-  color: darkslategray;
-}
-
-.career_category_position {
-  color: darkslategray;
-  margin: 10px 0;
-}
-
-.career_category_list {
+.section_category_list {
   padding-left: 10px;
   list-style: inside bullet;
   line-height: 1.75;
