@@ -47,7 +47,7 @@
 }
 
 .project_info_desc a:hover {
-  color: var(--info-header-color);
+  color: var(--link-hover-color);
 }
 
 .project_info_col_half {
