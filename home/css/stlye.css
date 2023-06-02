@@ -4,6 +4,7 @@
   --link-hover-color: crimson;
   --project-strong-color: crimson;
   --info-header-color: firebrick;
+  --skills-name-color: mediumslateblue;
   --project-title-color: rgb(204, 110, 67);
   --project-info-header: rgb(127, 92, 77);
   --slider-arrow-color: burlywood;
@@ -28,6 +29,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+body :not(header) {
+  font-size: 18px;
+  line-height: 1.75;
 }
 
 a {
@@ -112,7 +118,7 @@ footer {
 
 .section_container {
   width: 85%;
-  margin: 0 auto 75px auto;
+  margin: 0 auto 50px auto;
   max-width: 1080px;
 }
 
@@ -123,8 +129,9 @@ footer {
 
 .section_heading {
   width: 250px;
+  font-size: 24px;
   text-align: center;
-  margin: 0 auto 20px auto;
+  margin: 20px auto;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -149,6 +156,16 @@ footer {
   color: white;
 }
 
+.footer_link {
+  transition: all 0.5s;
+}
+
+.footer_link:hover,
+.footer_link:visited:hover {
+  font-size: 32px;
+  color: burlywood;
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding-top: 50px;
@@ -160,13 +177,8 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer_link {
-    transition: all 0.5s;
-  }
-
-  .footer_link:hover,
-  .footer_link:visited:hover {
-    font-size: 32px;
-    color: burlywood;
+  body :not(header) {
+    font-size: 20px;
+    line-height: 1.75;
   }
 }

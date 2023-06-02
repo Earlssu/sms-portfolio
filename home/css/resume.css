@@ -1,6 +1,14 @@
+.about_wrapper {
+  margin: 30px 0;
+}
+
 .about_name {
-  font-size: 28px;
-  margin: 20px 0;
+  font-size: 24px;
+}
+
+.name_link,
+.name_link:visited {
+  color: var(--link-color);
 }
 
 .name_link:hover {
@@ -8,22 +16,25 @@
 }
 
 .about_desc {
-  line-height: 1.75;
+  margin: 20px 0;
 }
 
-.about_desc_title {
-  font-size: 18px;
+.about_desc_title,
+.skills_category_title {
+  font-size: 20px;
   color: var(--hero-font-color);
 }
 
 .about_links_wrapper {
   margin-top: 50px;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .about_link {
-  margin: 10px 0;
+  margin: 20px 0;
+  width: 50%;
+  text-align: center;
 }
 
 .about_link,
@@ -46,25 +57,24 @@
 }
 
 .skills_category_title {
-  font-size: 20px;
+  font-size: 24px;
   color: var(--info-header-color);
   margin: 20px 0;
 }
 
 .skills_category_desc {
-  display: flex;
   margin: 5px 0;
-  line-height: 1.75;
+}
+
+.skills_name {
+  font-size: 20px;
+  color: var(--skills-name-color);
 }
 
 .skills_image {
-  width: 20%;
+  display: none;
   margin-right: 10px;
   height: 50px;
-}
-
-.skills_category_desc p {
-  width: 80%;
 }
 
 .section_category {
@@ -72,9 +82,10 @@
 }
 
 .section_category_title {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--info-header-color);
   margin: 20px 0;
+  line-height: 1.5;
 }
 
 .section_category_date {
@@ -88,11 +99,10 @@
 .section_category_list {
   padding-left: 10px;
   list-style: inside bullet;
-  line-height: 1.75;
 }
 
 .contact_form {
-  padding: 35px 0;
+  padding: 40px 0;
   border-radius: 5px;
   text-align: center;
   width: 100%;
@@ -111,8 +121,8 @@
 }
 
 .form_category_label {
-  text-align: left;
   font-size: 18px;
+  text-align: left;
   padding: 15px 0 10px 0;
   color: rgba(151, 50, 50, 0.85);
 }
@@ -135,12 +145,12 @@
 
 .form_button_submit {
   font-size: 16px;
-  margin-top: 20px;
+  margin: 20px auto 10px auto;
   border-radius: 2.5px;
   padding: 15px;
   width: 200px;
   border: solid 1px rgb(240, 239, 239);
-  background-color: rgb(253, 245, 155);
+  background-color: rgb(252, 243, 107);
 }
 
 .form_button_submit:hover {
@@ -154,8 +164,41 @@
   suffix: " ";
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .skills_image {
+    display: block;
+  }
+
+  .skills_name {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
+  .about_name {
+    font-size: 28px;
+  }
+
+  .about_desc_title,
+  .skills_category_title {
+    font-size: 26px;
+  }
+
+  .skills_category_desc {
+    display: flex;
+  }
+
+  .skills_image {
+    width: 20%;
+    height: 60px;
+  }
+
+  .skills_category_desc p {
+    width: 80%;
+  }
+
+  .form_category_label,
+  .form_button_submit {
+    font-size: 20px;
+  }
 }

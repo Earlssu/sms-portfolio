@@ -1,8 +1,10 @@
 .hero_heading {
-  font-size: 20px;
-  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 25px;
   margin: 10px auto;
-  width: fit-content;
+  width: 80%;
+  line-height: 1.5;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   opacity: 0;
   animation: fadeIn01 1s ease-in-out both;
@@ -125,15 +127,16 @@ footer p {
 
 @media screen and (min-width: 768px) {
   .hero_heading {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 30px;
+    width: fit-content;
   }
 
   .hero_desc_wrapper,
   .about_contact_info,
   .about_links_wrapper,
   footer p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .hero_desc_wrapper,
