@@ -17,7 +17,7 @@ header {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   background: rgb(219, 219, 219);
   background: linear-gradient(
     90deg,
@@ -30,22 +30,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-
-main {
-  padding-top: 75px;
-}
-
-footer {
-  margin-top: auto;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -55,9 +39,25 @@ a:visited {
   color: black;
 }
 
+main {
+  padding-top: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .to_top_button {
   position: fixed;
-  font-size: 30px;
+  font-size: 24px;
   padding: 10px 13px;
   bottom: 15px;
   right: 15px;
@@ -75,9 +75,8 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 50px;
-  background-color: white;
-  font-size: 1.2rem;
+  height: 60px;
+  background-color: whitesmoke;
 }
 
 .header_nav_link {
@@ -86,6 +85,7 @@ a:visited {
   display: inline-block;
   padding: 10px;
   position: relative;
+  font-size: 18px;
 }
 
 .header_nav_link:after {
@@ -112,10 +112,8 @@ a:visited {
 
 .section_container {
   width: 85%;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 75px auto;
   max-width: 1080px;
-  margin-bottom: 75px;
 }
 
 .section_container:last-of-type {
@@ -126,7 +124,6 @@ a:visited {
 .section_heading {
   width: 250px;
   text-align: center;
-  font-size: 28px;
   margin: 0 auto 20px auto;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -137,7 +134,6 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 20px;
 }
 
 .footer_icons_wrapper {
@@ -149,28 +145,28 @@ footer {
   margin: 0 auto;
 }
 
-.footer_link {
-  transition: all 0.5s;
-}
-
-.footer_link:hover,
-.footer_link:visited:hover {
-  font-size: 32px;
-  color: burlywood;
-}
-
 .footer_link:visited {
   color: white;
 }
 
-@media screen and (max-width: 767px) {
-  .header_nav {
-    font-size: 0.9rem;
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 50px;
+  }
+
+  .header_nav_link {
+    font-size: 22px;
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .header_nav {
-    font-size: 1rem;
+@media screen and (min-width: 1024px) {
+  .footer_link {
+    transition: all 0.5s;
+  }
+
+  .footer_link:hover,
+  .footer_link:visited:hover {
+    font-size: 32px;
+    color: burlywood;
   }
 }
