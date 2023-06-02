@@ -11,30 +11,31 @@
 }
 
 .hero_heading_strong {
+  font-size: 24px;
   animation: fadeIn03 1s ease-in-out both;
   color: var(--hero-font-color);
   animation-delay: 1s;
 }
 
 .hero_desc_wrapper {
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
 }
 
 .hero_profile_img {
-  width: 100%;
+  width: 90%;
+  margin: 20px auto;
   opacity: 0;
-  animation: fadeIn02 1s ease-in-out both;
-  animation-delay: 2s;
+  animation: fadeIn02 0.5s ease-in-out both;
+  animation-delay: 1.5s;
 }
 
 .hero_desc {
-  padding: 10px 15px;
+  padding: 0 15px;
   opacity: 0;
-  animation: fadeIn02 1s ease-in-out both;
-  animation-delay: 2.5s;
-  line-height: 2;
+  animation: fadeIn02 0.5s ease-in-out both;
+  animation-delay: 2s;
 }
 
 .hero_desc strong {
@@ -44,8 +45,8 @@
 .about_container {
   margin: 25px 0;
   opacity: 0;
-  animation: fadeIn02 1s ease-in-out both;
-  animation-delay: 3s;
+  animation: fadeIn02 0.5s ease-in-out both;
+  animation-delay: 2s;
 }
 
 .about_contact_info {
@@ -67,15 +68,16 @@
 }
 
 .about_links_wrapper {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .about_link {
+  margin: 25px;
   height: 50px;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +134,10 @@ footer p {
     width: fit-content;
   }
 
+  .hero_heading_strong {
+    font-size: 30px;
+  }
+
   .hero_desc_wrapper,
   .about_contact_info,
   .about_links_wrapper,
@@ -152,15 +158,21 @@ footer p {
   }
 
   .hero_desc {
-    padding: 20px 0;
+    margin-top: 20px;
+    padding: 0 30px;
   }
 
   .about_container {
     margin-bottom: 50px;
   }
 
+  .about_links_wrapper {
+    justify-content: start;
+  }
+
   .about_link {
-    margin: 20px 0;
+    width: 50%;
+    margin: 25px 0;
   }
 }
 
@@ -170,21 +182,27 @@ footer p {
     margin: 0 auto;
   }
 
+  .hero_heading,
+  .hero_heading_strong {
+    font-size: 34px;
+  }
+
   .hero_desc_wrapper {
     font-size: 20px;
     flex-direction: row;
-    justify-content: space-evenly;
   }
 
   .hero_profile_img {
-    width: 40%;
+    width: 45%;
   }
 
   .hero_desc {
-    padding: 0 20px;
+    margin: 0;
+    padding: 0 0 0 75px;
   }
 
   .about_container {
+    width: 70%;
     margin: 75px auto 50px auto;
   }
 
@@ -197,6 +215,7 @@ footer p {
   }
 
   .about_links_wrapper {
+    margin-top: 75px;
     justify-content: space-evenly;
   }
 
