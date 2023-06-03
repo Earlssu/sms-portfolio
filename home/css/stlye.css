@@ -1,5 +1,5 @@
 :root {
-  --hero-font-color: midnightblue;
+  --hero-font-color: darkblue;
   --link-color: gray;
   --link-hover-color: crimson;
   --project-strong-color: crimson;
@@ -79,10 +79,6 @@ footer {
 }
 
 .header_nav {
-  display: none;
-}
-
-.header_nav_mobile {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -198,18 +194,6 @@ footer {
   body :not(header) :not(footer) {
     font-size: 22px;
     line-height: 1.75;
-  }
-
-  .header_nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 60px;
-    background-color: whitesmoke;
-  }
-
-  .header_nav_mobile {
-    display: none;
   }
 
   .to_top_button {

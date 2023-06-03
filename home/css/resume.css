@@ -186,12 +186,20 @@ main {
 
 @media screen and (min-width: 1024px) {
   .about_name {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .name_link {
+    font-size: 32px;
   }
 
   .about_desc_title,
   .skills_category_title {
     font-size: 26px;
+  }
+
+  .skills_category_title {
+    font-size: 30px;
   }
 
   .skills_category_desc {
@@ -204,7 +212,19 @@ main {
   }
 
   .skills_icon {
-    font-size: 28px;
+    font-size: 30px;
+  }
+
+  .skills_name {
+    font-size: 26px;
+  }
+
+  .section_category_title {
+    font-size: 26px;
+  }
+
+  .section_category_date {
+    font-size: 20px;
   }
 
   .form_category_label,

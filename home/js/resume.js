@@ -17,6 +17,7 @@ phoneNumber.addEventListener("change", () => {
   }
 });
 
+const contactForm = document.getElementById("contact_form");
 const emailInput = document.getElementById("from_email");
 const emailValidationMessage = document.getElementById(
   "email_validation_message"
@@ -31,12 +32,13 @@ emailInput.addEventListener("change", () => {
   }
 });
 
-document.getElementById("contact_form").addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  console.log(document.getElementById("contact_form"), this);
 
   if (window.confirm("입력하신 내용으로 보내시겠습니까?")) {
     emailjs
-      .sendForm("service_sms_portfolio", "template_sms_portfolio", this)
+      .sendForm("service_sms_portfolio", "template_sms_portfolio", contactForm)
       .then(
         () => {
           alert("감사합니다! 빠른 시간 안에 답장드리도록 하겠습니다.");
