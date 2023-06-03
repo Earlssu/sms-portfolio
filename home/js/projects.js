@@ -5,8 +5,8 @@ const p1SliderPageNames = [
   "기본 랜딩 페이지",
   "내 정보",
   "내 정보 수정",
-  "이벤트 상세 페이지",
-  "비밀번호 변경 페이지",
+  "이벤트 상세",
+  "비밀번호 변경",
 ];
 const p1SliderPageName = document.querySelector(".page_title_01");
 let p1currentIdx = 0;

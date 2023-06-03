@@ -1,12 +1,13 @@
 :root {
   --hero-font-color: midnightblue;
-  --link-color: rgb(100, 100, 100);
+  --link-color: gray;
   --link-hover-color: crimson;
   --project-strong-color: crimson;
   --info-header-color: firebrick;
   --skills-name-color: darkblue;
   --project-title-color: rgb(204, 110, 67);
   --project-info-header: rgb(127, 92, 77);
+  --items-border-color: burlywood;
   --slider-arrow-color: burlywood;
   --slider-arrow-hover: rgb(255, 201, 99);
   --section-sub-color: darkslategray;
