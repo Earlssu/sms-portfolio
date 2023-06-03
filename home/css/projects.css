@@ -33,8 +33,9 @@
 }
 
 .project_info_title {
+  width: 110%;
   margin: 10px auto;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   color: var(--project-info-header);
 }
@@ -44,8 +45,8 @@
 }
 
 .project_links_wrapper {
-  margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -141,14 +142,21 @@
 
 .project_desc {
   width: 95%;
-  font-size: 18px;
   margin: 15px auto;
   line-height: 2;
   text-align: left;
 }
 
+.project_desc {
+  font-size: 18px;
+}
+
 .project_desc p {
   display: none;
+}
+
+.desc_subject {
+  font-size: 18px;
 }
 
 .project_desc .active {
@@ -156,6 +164,84 @@
 }
 
 @media screen and (min-width: 768px) {
+  .project_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .project_info_category {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .project_info_title {
+    font-size: 20px;
+    width: 140px;
+    margin: 0;
+    text-align: start;
+  }
+
+  .project_info_desc {
+    font-size: 18px;
+    width: 70%;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .project_links_wrapper {
+    justify-content: start;
+    width: 90%;
+    margin: auto;
+  }
+
+  .project_link {
+    font-size: 20px;
+    margin: 0 auto 0 0;
+  }
+
+  .project_icon {
+    font-size: 26px;
+  }
+
+  .stacks_wrapper {
+    width: 80%;
+  }
+
+  .skills_image {
+    height: 35px;
+  }
+
+  .project_slider,
+  .project_slide {
+    height: 600px;
+  }
+
+  .slider_button i {
+    font-size: 26px;
+  }
+
+  .btn_prev {
+    top: -1%;
+    left: 25%;
+  }
+
+  .btn_next {
+    top: -1%;
+    right: 25%;
+  }
+
+  .page_title {
+    font-size: 20px;
+  }
+
+  .project_desc {
+    width: 80%;
+  }
+
+  .project_desc p,
+  .desc_subject {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
