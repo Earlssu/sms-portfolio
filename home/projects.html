@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,18 +12,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/stlye.css" />
     <link rel="stylesheet" href="./css/projects.css" />
-    <title>ms portfolio</title>
+    <title>MS portfolio</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
+
   <body>
     <header>
       <ul class="header_nav">
-        <li><a class="header_nav_link" href="./index.html">Home</a></li>
-        <li><a class="header_nav_link" href="./resume.html">Resume</a></li>
         <li>
-          <a class="header_nav_link" href="./projects.html">Projects</a>
+          <a class="header_nav_link" href="./index.html"> Home </a>
+        </li>
+        <li>
+          <a class="header_nav_link" href="./resume.html"> Resume </a>
+        </li>
+        <li>
+          <a class="header_nav_link" href="./projects.html"> Projects </a>
         </li>
       </ul>
     </header>
@@ -30,87 +41,90 @@
     <button href="#" class="to_top_button">🔝</button>
 
     <main>
-      <div id="l'acier"></div>
-      <section class="section_container" id="projects">
+      <section class="projects_container" id="projects">
+        <div id="l'acier"></div>
         <h2 class="section_heading">Projects</h2>
         <ul class="projects">
           <li class="projects_item">
             <h3 class="project_title">L'acier 남성 전용 화장품 쇼핑몰</h3>
             <div class="project_info">
-              <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> 진행 기간 </span>
-                  <span class="project_info_desc">
-                    2023.01 - 2023.02 (4주)
-                  </span>
-                </div>
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> 프로젝트 규모 </span>
-                  <span class="project_info_desc">
-                    6인 프로젝트 (FE 3 / BE 3)
-                  </span>
-                </div>
+              <div class="project_info_category">
+                <span class="project_info_title"> 진행 기간 </span>
+                <span class="project_info_desc"> 2023.01 - 2023.02 (4주) </span>
               </div>
-              <div class="project_info_row">
-                <div class="project_info_category">
-                  <span class="project_info_title"> 주요 기능 </span>
-                  <span class="project_info_desc">
-                    로그인, 회원 정보 조회 및 수정, 장바구니 추가, 결제, 구독
-                    시스템
-                  </span>
-                </div>
+              <div class="project_info_category">
+                <span class="project_info_title"> 프로젝트 규모 </span>
+                <span class="project_info_desc">
+                  6인 프로젝트 (FE 3 / BE 3)
+                </span>
               </div>
-              <div class="project_info_row">
-                <div class="project_info_category">
-                  <span class="project_info_title"> 주요 기술스택 </span>
-                  <span class="project_info_desc">
-                    <img
-                      class="skills_image"
-                      src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
-                    />
-                    <img
-                      class="skills_image"
-                      src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
-                    />
-                    <img
-                      class="skills_image"
-                      src="https://img.shields.io/badge/redux-9999FF?style=for-the-badge&logo=redux&logoColor=white"
-                    />
-                    <img
-                      class="skills_image"
-                      src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                    />
-                  </span>
-                </div>
+              <div class="project_info_category">
+                <span class="project_info_title"> 주요 기능 </span>
+                <span class="project_info_desc">
+                  로그인, 회원 정보 조회 및 수정, 장바구니 추가, 결제, 구독
+                  시스템
+                </span>
               </div>
-              <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> GitHub </span>
-                  <span class="project_info_desc"
-                    ><a href="https://github.com/codestates-seb/seb41_main_002"
-                      ><i class="fa-solid fa-code-merge"></i> 링크</a
-                    ></span
-                  >
-                </div>
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> 배포 URL </span>
-                  <span class="project_info_desc"
-                    ><a
-                      href="http://seb41team02.s3-website.ap-northeast-2.amazonaws.com/"
-                      ><i class="fa-solid fa-desktop"></i> 링크</a
-                    ></span
-                  >
-                </div>
+              <div class="project_info_category">
+                <span class="project_info_title"> 주요 기술스택 </span>
+                <span class="stacks_wrapper">
+                  <img
+                    class="skills_image"
+                    src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                  />
+                  <img
+                    class="skills_image"
+                    src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
+                  />
+                  <img
+                    class="skills_image"
+                    src="https://img.shields.io/badge/redux-9999FF?style=for-the-badge&logo=redux&logoColor=white"
+                  />
+                  <img
+                    class="skills_image"
+                    src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"
+                  />
+                  <img
+                    class="skills_image"
+                    src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                  />
+                </span>
               </div>
-              <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> 발표 영상 </span>
-                  <span class="project_info_desc"
-                    ><a href="https://www.youtube.com/watch?v=ioL7UFwTjPs"
-                      ><i class="fa-brands fa-youtube"></i> 링크</a
-                    ></span
-                  >
-                </div>
+              <div class="project_links_wrapper">
+                <span class="project_info_title"> 링크 </span>
+                <a
+                  class="project_link"
+                  href="https://github.com/codestates-seb/seb41_main_002"
+                  target="_blank"
+                >
+                  <iconify-icon
+                    class="project_icon"
+                    icon="mdi:github"
+                  ></iconify-icon>
+                  Github
+                </a>
+                <a
+                  class="project_link"
+                  href="http://seb41team02.s3-website.ap-northeast-2.amazonaws.com/"
+                  target="_blank"
+                >
+                  <iconify-icon
+                    class="project_icon"
+                    icon="arcticons:urlsanitizer"
+                  ></iconify-icon>
+                  배포 URL
+                </a>
+                <a
+                  class="project_link"
+                  href="https://www.youtube.com/watch?v=ioL7UFwTjPs"
+                  target="_blank"
+                >
+                  <iconify-icon
+                    class="project_icon"
+                    icon="ph:video"
+                  ></iconify-icon>
+                  발표 영상
+                </a>
               </div>
             </div>
             <div class="project_slider">
@@ -133,7 +147,7 @@
                 />
               </div>
             </div>
-            <div class="slider_number_wrapper">
+            <div class="slider_buttons_wrapper">
               <button class="slider_button btn_next btn_01_next">
                 <i class="fa-solid fa-circle-chevron-right"></i>
               </button>
@@ -203,11 +217,11 @@
             <h3 class="project_title">Dodge.gg 전적 검색 사이트</h3>
             <div class="project_info">
               <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
+                <div class="project_info_category">
                   <span class="project_info_title"> 진행 기간 </span>
                   <span class="project_info_desc"> 2022.12 (3주) </span>
                 </div>
-                <div class="project_info_category project_info_col_half">
+                <div class="project_info_category">
                   <span class="project_info_title"> 프로젝트 규모 </span>
                   <span class="project_info_desc"> 3인 프로젝트 (FE 3) </span>
                 </div>
@@ -223,10 +237,14 @@
               <div class="project_info_row">
                 <div class="project_info_category">
                   <span class="project_info_title"> 주요 기술스택 </span>
-                  <span class="project_info_desc">
+                  <span class="stacks_wrapper">
                     <img
                       class="skills_image"
                       src="https://img.shields.io/badge/react-764ABC?style=for-the-badge&logo=react&logoColor=white"
+                    />
+                    <img
+                      class="skills_image"
+                      src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"
                     />
                     <img
                       class="skills_image"
@@ -235,15 +253,19 @@
                   </span>
                 </div>
               </div>
-              <div class="project_info_row">
-                <div class="project_info_category">
-                  <span class="project_info_title"> GitHub </span>
-                  <span class="project_info_desc">
-                    <a href="https://github.com/limdumb/DodGe.gg">
-                      <i class="fa-solid fa-code-merge"></i> 링크
-                    </a>
-                  </span>
-                </div>
+              <div class="project_links_wrapper">
+                <span class="project_info_title"> 링크 </span>
+                <a
+                  class="project_link"
+                  href="https://github.com/limdumb/DodGe.gg"
+                  target="_blank"
+                >
+                  <iconify-icon
+                    class="project_icon"
+                    icon="mdi:github"
+                  ></iconify-icon>
+                  Github
+                </a>
               </div>
             </div>
             <div class="project_slider">
@@ -257,7 +279,7 @@
                 <img src="./assets/project_02_02.jpg" alt="" />
               </div>
             </div>
-            <div class="slider_number_wrapper">
+            <div class="slider_buttons_wrapper">
               <button class="slider_button btn_next btn_02_next">
                 <i class="fa-solid fa-circle-chevron-right"></i>
               </button>
@@ -308,13 +330,13 @@
             <h3 class="project_title">Service Station Web Page</h3>
             <div class="project_info">
               <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
+                <div class="project_info_category">
                   <span class="project_info_title">진행 기간</span>
                   <span class="project_info_desc">
                     2020.03 - 2020.05 (10주)
                   </span>
                 </div>
-                <div class="project_info_category project_info_col_half">
+                <div class="project_info_category">
                   <span class="project_info_title"> 프로젝트 규모 </span>
                   <span class="project_info_desc"> 14인 프로젝트 </span>
                 </div>
@@ -330,7 +352,7 @@
               <div class="project_info_row">
                 <div class="project_info_category">
                   <span class="project_info_title"> 주요 기술스택 </span>
-                  <span class="project_info_desc">
+                  <span class="stacks_wrapper">
                     <img
                       class="skills_image"
                       src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
@@ -345,35 +367,47 @@
                     />
                     <img
                       class="skills_image"
+                      src="https://img.shields.io/badge/java-2C2255?style=for-the-badge&logo=java&logoColor=white"
+                    />
+                    <img
+                      class="skills_image"
                       src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
                     />
                   </span>
                 </div>
               </div>
               <div class="project_info_row">
-                <div class="project_info_category project_info_col_half">
-                  <span class="project_info_title"> GitHub </span>
-                  <span class="project_info_desc">
-                    <a href="https://github.com/austin-college/srv">
-                      <i class="fa-solid fa-code-merge"></i> 링크
-                    </a>
-                  </span>
+                <div class="project_links_wrapper">
+                  <span class="project_info_title"> 링크 </span>
+                  <a
+                    class="project_link"
+                    href="https://github.com/austin-college/srv"
+                    target="_blank"
+                  >
+                    <iconify-icon
+                      class="project_icon"
+                      icon="mdi:github"
+                    ></iconify-icon>
+                    Github
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="project_desc">
-              2020년 봄 학기 Software Engineering 수업에서 진행한 팀
-              프로젝트입니다.
-              <br />
-              Service Station은 재학생들의 봉사 시간을 기록 및 관리하는 Austin
-              College의 실제 부서로 문서의 디지털화를 위한 웹 페이지 개발을
-              의뢰했습니다. 사용자 흐름, 와이어프레임 등
-              <strong class="desc_subject">
-                프로젝트 문서화의 중요성과 기초</strong
-              >에 대해 학습하고 HTML/CSS/JavaScript 등
-              <strong class="desc_subject"> 웹 개발의 기본</strong>에 대해
-              배웠습니다.
+              <p style="display: block">
+                2020년 봄 학기 Software Engineering 수업에서 진행한 팀
+                프로젝트입니다.
+                <br />
+                Service Station은 재학생들의 봉사 시간을 기록 및 관리하는 Austin
+                College의 실제 부서로 문서의 디지털화를 위한 웹 페이지 개발을
+                의뢰했습니다. 사용자 흐름, 와이어프레임 등
+                <strong class="desc_subject">
+                  프로젝트 문서화의 중요성과 기초</strong
+                >에 대해 학습하고 HTML/CSS/JavaScript 등
+                <strong class="desc_subject"> 웹 개발의 기본</strong>에 대해
+                배웠습니다.
+              </p>
             </div>
           </li>
         </ul>
@@ -382,10 +416,18 @@
 
     <footer>
       <div class="footer_icons_wrapper">
-        <a class="footer_link" href="https://github.com/Earlssu">
+        <a
+          class="footer_link"
+          href="https://github.com/Earlssu"
+          target="_blank"
+        >
           <i class="fa-brands fa-github"></i>
         </a>
-        <a class="footer_link" href="https://code-in-law.tistory.com/">
+        <a
+          class="footer_link"
+          href="https://code-in-law.tistory.com/"
+          target="_blank"
+        >
           <i class="fa-brands fa-blogger"></i>
         </a>
       </div>

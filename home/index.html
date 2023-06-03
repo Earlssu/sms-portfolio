@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,15 +19,19 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/stlye.css" />
     <link rel="stylesheet" href="./css/home.css" />
-    <title>ms portfolio</title>
+    <title>MS portfolio</title>
   </head>
   <body>
     <header>
       <ul class="header_nav">
-        <li><a class="header_nav_link" href="./index.html">Home</a></li>
-        <li><a class="header_nav_link" href="./resume.html">Resume</a></li>
         <li>
-          <a class="header_nav_link" href="./projects.html">Projects</a>
+          <a class="header_nav_link" href="./index.html"> Home </a>
+        </li>
+        <li>
+          <a class="header_nav_link" href="./resume.html"> Resume </a>
+        </li>
+        <li>
+          <a class="header_nav_link" href="./projects.html"> Projects </a>
         </li>
       </ul>
     </header>
@@ -68,8 +73,10 @@
 
             <p></p>
             <div class="about_links_wrapper">
-              <a class="about_link" href="./resume.html"> 이력서 살펴보기 </a>
-              <a class="about_link" href="./projects.html">
+              <a class="about_link" href="./resume.html" target="_blank">
+                이력서 살펴보기
+              </a>
+              <a class="about_link" href="./projects.html" target="_blank">
                 프로젝트 살펴보기
               </a>
             </div>
@@ -77,25 +84,33 @@
         </div>
       </section>
 
-      <section class="section_container">
+      <section class="about_container">
         <div class="about_contact_info">
-          <div>
+          <div class="contact_info">
             <div class="contact_info_header">연락처</div>
             010-5063-5505
           </div>
-          <div>
+          <div class="contact_info">
             <div class="contact_info_header">이메일</div>
             shim5505@gmail.com
           </div>
         </div>
         <div class="about_links_wrapper">
-          <a class="about_link" href="./resume.html#contact">
+          <a class="about_link" href="./resume.html#contact" target="_blank">
             이메일로 연락하기
           </a>
-          <a class="about_link" href="https://code-in-law.tistory.com/">
+          <a
+            class="about_link"
+            href="https://code-in-law.tistory.com/"
+            target="_blank"
+          >
             블로그 글 살펴보기
           </a>
-          <a class="about_link" href="https://github.com/Earlssu">
+          <a
+            class="about_link"
+            href="https://github.com/Earlssu"
+            target="_blank"
+          >
             GitHub Profile
           </a>
         </div>
@@ -104,10 +119,18 @@
 
     <footer>
       <div class="footer_icons_wrapper">
-        <a class="footer_link" href="https://github.com/Earlssu">
+        <a
+          class="footer_link"
+          href="https://github.com/Earlssu"
+          target="_blank"
+        >
           <i class="fa-brands fa-github"></i>
         </a>
-        <a class="footer_link" href="https://code-in-law.tistory.com/">
+        <a
+          class="footer_link"
+          href="https://code-in-law.tistory.com/"
+          target="_blank"
+        >
           <i class="fa-brands fa-blogger"></i>
         </a>
       </div>
@@ -116,5 +139,4 @@
   </body>
 
   <script src="./js/script.js"></script>
-  <script src="./js/home.js"></script>
 </html>

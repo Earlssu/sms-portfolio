@@ -1,11 +1,13 @@
 :root {
-  --hero-font-color: midnightblue;
-  --link-color: rgb(100, 100, 100);
+  --hero-font-color: darkblue;
+  --link-color: gray;
   --link-hover-color: crimson;
   --project-strong-color: crimson;
   --info-header-color: firebrick;
+  --skills-name-color: darkblue;
   --project-title-color: rgb(204, 110, 67);
   --project-info-header: rgb(127, 92, 77);
+  --items-border-color: burlywood;
   --slider-arrow-color: burlywood;
   --slider-arrow-hover: rgb(255, 201, 99);
   --section-sub-color: darkslategray;
@@ -17,7 +19,7 @@ header {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   background: rgb(219, 219, 219);
   background: linear-gradient(
     90deg,
@@ -30,20 +32,9 @@ body {
   flex-direction: column;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-
-main {
-  padding-top: 75px;
-}
-
-footer {
-  margin-top: auto;
+body :not(header) {
+  font-size: 18px;
+  line-height: 2;
 }
 
 a {
@@ -55,10 +46,26 @@ a:visited {
   color: black;
 }
 
+main {
+  padding-top: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .to_top_button {
   position: fixed;
-  font-size: 30px;
-  padding: 10px 13px;
+  font-size: 22px;
+  padding: 7px 17.5px;
   bottom: 15px;
   right: 15px;
   border: solid 1px rgba(0, 0, 0, 0.15);
@@ -75,16 +82,17 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 50px;
-  background-color: white;
+  height: 70px;
+  background-color: whitesmoke;
 }
 
 .header_nav_link {
   color: rgba(0, 0, 0, 0.55);
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   position: relative;
+  font-size: 18px;
 }
 
 .header_nav_link:after {
@@ -111,10 +119,8 @@ a:visited {
 
 .section_container {
   width: 85%;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   max-width: 1080px;
-  margin-bottom: 75px;
 }
 
 .section_container:last-of-type {
@@ -124,40 +130,76 @@ a:visited {
 
 .section_heading {
   width: 250px;
+  font-size: 24px;
   text-align: center;
-  font-size: 28px;
-  margin: 0 auto 20px auto;
+  margin: 20px auto;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 footer {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 20px;
 }
 
 .footer_icons_wrapper {
   display: flex;
   justify-content: space-evenly;
-  font-size: 28px;
   width: 300px;
   height: 50px;
   margin: 0 auto;
 }
 
-.footer_link {
+.footer_link,
+.footer_link:visited {
+  color: white;
   transition: all 0.5s;
+}
+
+.footer_link i {
+  font-size: 30px;
 }
 
 .footer_link:hover,
 .footer_link:visited:hover {
-  font-size: 32px;
+  transform: scale(1.25);
   color: burlywood;
 }
 
-.footer_link:visited {
-  color: white;
+@media screen and (min-width: 768px) {
+  body :not(header) :not(footer) {
+    font-size: 20px;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  .header_nav_link {
+    font-size: 22px;
+  }
+
+  .section_heading {
+    font-size: 32px;
+  }
+
+  footer {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body :not(header) :not(footer) {
+    font-size: 22px;
+    line-height: 1.75;
+  }
+
+  .to_top_button {
+    font-size: 30px;
+    padding: 10px;
+    bottom: 25px;
+    right: 50px;
+  }
 }
