@@ -191,6 +191,7 @@
   .project_links_wrapper {
     justify-content: start;
     width: 90%;
+    padding-left: 10px;
     margin: auto;
   }
 
@@ -205,6 +206,10 @@
 
   .stacks_wrapper {
     width: 80%;
+    padding-left: 10px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .skills_image {
@@ -231,7 +236,7 @@
   }
 
   .page_title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .project_desc {
@@ -240,9 +245,14 @@
 
   .project_desc p,
   .desc_subject {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .project_slider,
+  .project_slide {
+    width: 800px;
+    height: 750px;
+  }
 }
