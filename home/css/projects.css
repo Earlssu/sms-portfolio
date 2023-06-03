@@ -1,3 +1,7 @@
+main {
+  animation: fadeIn03 1.5s ease-in-out both;
+}
+
 .projects_container {
   width: 95%;
   margin: 0 auto;
@@ -254,5 +258,14 @@
   .project_slide {
     width: 800px;
     height: 750px;
+  }
+}
+
+@keyframes fadeIn03 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
