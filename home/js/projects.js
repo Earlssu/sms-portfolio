@@ -1,3 +1,58 @@
+const p0Slides = document.querySelectorAll(".project_00_slide");
+const p0NextBtn = document.querySelector(".btn_00_next");
+const p0PrevBtn = document.querySelector(".btn_00_prev");
+const p0SliderPageNames = ["기본 랜딩 페이지", "이력서", "프로젝트"];
+const p0SliderPageName = document.querySelector(".page_title_00");
+let p0currentIdx = 0;
+const p0MaxIdx = p0Slides.length - 1;
+
+p0Slides.forEach((slide, idx) => {
+  slide.style.transform = `translateX(${idx * 100}%)`;
+  p0SliderPageName.textContent = `${p0SliderPageNames[p0currentIdx]}`;
+  document.querySelector(`.p0_desc${p0currentIdx + 1}`).classList.add("active");
+});
+
+p0NextBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p0_desc${p0currentIdx + 1}`)
+    .classList.remove("active");
+
+  if (p0currentIdx === p0MaxIdx) {
+    p0currentIdx = 0;
+  } else {
+    p0currentIdx++;
+  }
+
+  p0Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p0currentIdx)}%)`;
+    p0SliderPageName.textContent = `${p0SliderPageNames[p0currentIdx]}`;
+    document
+      .querySelector(`.p0_desc${p0currentIdx + 1}`)
+      .classList.add("active");
+  });
+});
+
+p0PrevBtn.addEventListener("click", () => {
+  document
+    .querySelector(`.p0_desc${p0currentIdx + 1}`)
+    .classList.remove("active");
+
+  if (p0currentIdx === 0) {
+    p0currentIdx = p0MaxIdx;
+  } else {
+    p0currentIdx--;
+  }
+
+  p0Slides.forEach((slide, idx) => {
+    slide.style.transform = `translateX(${100 * (idx - p0currentIdx)}%)`;
+    p0SliderPageName.textContent = `${p0SliderPageNames[p0currentIdx]}`;
+
+    document
+      .querySelector(`.p0_desc${p0currentIdx + 1}`)
+      .classList.add("active");
+  });
+});
+
 const p1Slides = document.querySelectorAll(".project_01_slide");
 const p1NextBtn = document.querySelector(".btn_01_next");
 const p1PrevBtn = document.querySelector(".btn_01_prev");
