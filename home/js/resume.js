@@ -2,6 +2,8 @@ const phoneNumber = document.getElementById("from_phone");
 const phoneValidationMessage = document.getElementById(
   "phone_validation_message"
 );
+const first3Digits =
+  phoneNumber.value[0] + phoneNumber.value[1] + phoneNumber.value[2];
 
 phoneNumber.addEventListener("keyup", () => {
   phoneNumber.value = phoneNumber.value
@@ -10,10 +12,29 @@ phoneNumber.addEventListener("keyup", () => {
     .replace(/(\-{1,2})$/g, "");
 });
 
+phoneNumber.addEventListener("keyup", () => {
+  if (first3Digits !== "010" && phoneNumber.value.length >= 3) {
+    phoneValidationMessage.textContent = "휴대폰 번호 앞자리를 확인해주세요.";
+  }
+});
+
 phoneNumber.addEventListener("change", () => {
+  if (phoneNumber.value.length === 0) {
+    phoneValidationMessage.textContent = "";
+  }
+
   if (phoneNumber.value.length !== 13) {
     phoneValidationMessage.textContent =
       "휴대폰 번호를 모두 입력하지 않았습니다.";
+  }
+});
+
+phoneNumber.addEventListener("blur", () => {
+  if (
+    (first3Digits === "010" && phoneNumber.value.length === 13) ||
+    phoneNumber.value.length === 0
+  ) {
+    phoneValidationMessage.textContent = "";
   }
 });
 
