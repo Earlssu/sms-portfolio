@@ -9,9 +9,9 @@ main {
 .project_info_title,
 .page_title,
 .links_label,
+.project_link,
 .desc_subject {
   font-family: "MaruBuriSemiBold";
-  font-size: 20px;
 }
 
 .projects_container {
@@ -52,6 +52,7 @@ main {
   text-align: center;
   color: var(--project-info-header);
   margin: 10px auto;
+  font-size: 18px;
 }
 
 .project_info_desc {
@@ -73,6 +74,7 @@ main {
 .project_link {
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .project_icon {
@@ -153,6 +155,7 @@ main {
 
 .page_title {
   color: var(--hero-font-color);
+  font-size: 20px;
 }
 
 .desc_subject {
