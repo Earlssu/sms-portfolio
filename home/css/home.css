@@ -1,3 +1,9 @@
+.hero_heading,
+.hero_desc strong,
+.contact_info_header {
+  font-family: "MaruBuriSemiBold";
+}
+
 .hero_heading {
   font-size: 24px;
   text-align: center;

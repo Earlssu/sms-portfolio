@@ -2,6 +2,18 @@ main {
   animation: fadeIn03 1.5s ease-in-out both;
 }
 
+.project_title {
+  font-family: "MaruBuriBold";
+}
+
+.project_info_title,
+.page_title,
+.links_label,
+.project_link,
+.desc_subject {
+  font-family: "MaruBuriSemiBold";
+}
+
 .projects_container {
   width: 95%;
   margin: 0 auto;
@@ -37,11 +49,10 @@ main {
 }
 
 .project_info_title {
-  width: 110%;
-  margin: 10px auto;
   text-align: center;
-  font-size: 20px;
   color: var(--project-info-header);
+  margin: 10px auto;
+  font-size: 18px;
 }
 
 .project_info_desc {
@@ -54,9 +65,16 @@ main {
   justify-content: space-evenly;
 }
 
+.links_label {
+  color: var(--project-info-header);
+  width: 100%;
+  margin: 10px 0;
+}
+
 .project_link {
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .project_icon {
@@ -136,11 +154,12 @@ main {
 }
 
 .page_title {
-  font-size: 20px;
   color: var(--hero-font-color);
+  font-size: 20px;
 }
 
 .desc_subject {
+  font-size: 18px;
   color: var(--project-strong-color);
 }
 
@@ -157,10 +176,6 @@ main {
 
 .project_desc p {
   display: none;
-}
-
-.desc_subject {
-  font-size: 18px;
 }
 
 .project_desc .active {
@@ -197,6 +212,11 @@ main {
     width: 90%;
     padding-left: 10px;
     margin: auto;
+  }
+
+  .links_label {
+    width: 15%;
+    text-align: start;
   }
 
   .project_link {

@@ -15,7 +15,7 @@
 
 body,
 header {
-  font-family: "MaruBuriSemiBold";
+  font-family: "MaruBuri";
 }
 
 body {
@@ -93,6 +93,7 @@ footer {
   padding: 5px;
   position: relative;
   font-size: 18px;
+  font-family: "MaruBuriBold";
 }
 
 .header_nav_link:after {
@@ -131,6 +132,7 @@ footer {
 .section_heading {
   width: 250px;
   font-size: 24px;
+  font-family: "MaruBuriBold";
   text-align: center;
   margin: 20px auto;
   padding-bottom: 15px;
