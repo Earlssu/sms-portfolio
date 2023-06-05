@@ -2,12 +2,22 @@ main {
   animation: fadeIn03 1.5s ease-in-out both;
 }
 
-.about_wrapper {
-  margin: 30px 0;
+.about_name,
+.name_link,
+.skills_category_title {
+  font-family: "MaruBuriBold";
+  font-size: 26px;
 }
 
-.about_name {
-  font-size: 24px;
+.about_desc_title,
+.skills_name,
+.section_category_title,
+.form_category_label {
+  font-family: "MaruBuriSemiBold";
+}
+
+.about_wrapper {
+  margin: 30px 0;
 }
 
 .name_link,
