@@ -2,19 +2,27 @@ const phoneNumber = document.getElementById("from_phone");
 const phoneValidationMessage = document.getElementById(
   "phone_validation_message"
 );
-const first3Digits =
-  phoneNumber.value[0] + phoneNumber.value[1] + phoneNumber.value[2];
+let first3Digits = "";
 
 phoneNumber.addEventListener("keyup", () => {
   phoneNumber.value = phoneNumber.value
     .replace(/[^0-9]/g, "")
     .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3")
     .replace(/(\-{1,2})$/g, "");
-});
 
-phoneNumber.addEventListener("keyup", () => {
-  if (first3Digits !== "010" && phoneNumber.value.length >= 3) {
+  if (phoneNumber.value.length >= 3) {
+    first3Digits =
+      phoneNumber.value[0] + phoneNumber.value[1] + phoneNumber.value[2];
+  }
+
+  if (
+    first3Digits !== "010" &&
+    first3Digits !== NaN &&
+    phoneNumber.value.length >= 3
+  ) {
     phoneValidationMessage.textContent = "휴대폰 번호 앞자리를 확인해주세요.";
+  } else if (first3Digits === "010" && phoneNumber.value.length === 13) {
+    phoneValidationMessage.textContent = "";
   }
 });
 
